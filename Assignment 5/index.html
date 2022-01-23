@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <<link rel="stylesheet" href="style.css">
+    <title>Admin Panal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./Javascript/counterup.js"></script>
+    <script src="./Javascript/jquery.waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
+    
+    
+
+    </head>
+</head>
+<body>
+    <div class="page_wrapper">
+        <div class="left_area">
+            <div class="header">
+                <div class="logo_container">
+                    <div class="logo"></div>
+                    <div class="text">
+                        <span>Admin</span><span>DASH</span>
+                    </div>
+                </div>
+                <div class="message">
+                    The main action of the <a href="#dashboard">Dashboard</a>  is here.
+                </div>
+                <div class="button">
+                    <button type="button">Start Action</button>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="navbar_container">
+                    <ul class="navbar_list">
+
+                        <li class="navbar_list_item"><a href="#Dashboard"><i class="bi bi-speedometer2"></i>Dashboard</a></li>
+                        <li class="navbar_list_item"><a href="#UI_kit"><i class="bi bi-list-ul"></i>UI Kit</a></li>
+                        <li class="navbar_list_item"><a href="#Emails"><i class="bi bi-envelope"></i>Emails</a></li>
+                        <li class="navbar_list_item"><a href="#Charts"><i class="bi bi-bar-chart-line"></i>Chats</a></li>
+                        <li class="navbar_list_item"><a href="#Tables"><i class="bi bi-table"></i>Table</a></li>
+                        <li class="navbar_list_item"><a href="#Forms"><i class="bi bi-pencil-square"></i>Forms</a></li>
+                        <li class="navbar_list_item"><a href="#Calender"><i class="bi bi-calendar-date"></i>Calender</a></li>
+                        <li class="navbar_list_item"><a href="#Pages"><i class="bi bi-bookmarks"></i>Pages</a></li>
+                        <li class="navbar_list_item"><a href="#Maps"><i class="bi bi-geo-alt"></i>Maps</a></li>
+                        <li class="navbar_list_item"><a href="#My_Profile"><i class="bi bi-person"></i>My Profile</a></li>
+                        <li class="navbar_list_item"><a href="#Logout"><i class="bi bi-box-arrow-right"></i>Logout</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right_area">
+            <div class="header">
+                <div class="header_top">
+                    <div class="notifcation_icons">
+                        <div class="notifications icon_button"><i class="bi bi-bell"></i><div class="notifiation_number">1</div></div>
+                        <div class="messages icon_button"><i class="bi bi-chat-right-text"></i><div class="notifiation_number">2</div></div>
+                        <div class="user icon_button"><i class="bi bi-person-fill"></i><div class="notifiation_number">3</div></div>
+                    </div>
+                    <div class="header_right_area">
+                        <div class="search_box"><input type="search" placeholder="Search..."><i class="bi bi-search"></i></div>
+                        <div class="user_info">
+                            <div class="avatar"></div>
+                            <a class="text" href="#dropdown">
+                                <div class="username"><span>Hanzala Zahid</span><i class="bi bi-chevron-compact-down"></i></div>
+                                <div class="user_type">Super Admin</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header_bottom">
+                    <div class="page_title">DASHBOARD</div>
+                    <div class="page_path">Home / Dashboard</div>
+                </div>
+            </div>
+            <div class="page_content">
+                <div class="row row1">
+                    <div class="block1 card">
+                        <div class="avatar"><i class="bi bi-people-fill fa-2xl"></i></div>
+                        <div class="text">
+                            <div class="title">Total Users</div>
+                            <span class="counter">2,542</span>
+                        </div>
+                    </div>
+                    <div class="block2 card">
+                        <div class="avatar"><i class="bi bi-cart-fill fa-2xl"></i></div>
+                        <div class="text">
+                            <div class="title">New Orders</div>
+                            <span class="counter">15,020</span>
+                        </div>
+                    </div>
+                    <div class="block3 card">
+                        <div class="avatar"><i class="fas fa-dollar-sign fa-2x"></i></div>
+                        <div class="text">
+                            <div class="title">Last Week Earning</div>
+                            <span>$</span><span class="counter">42,348</span>
+                        </div>
+                    </div>
+                    <div class="block4 card">
+                        <div class="avatar"><i class="bi bi-truck fa-2x"></i></div>
+                        <div class="text">
+                            <div class="title">Products Delivered</div>
+                            <span class="counter">2,348</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row2">
+                    <div class="block1 card">
+                        <div class="title">Earning Graph</div>
+                        <div class="graph">
+                            <canvas id="earning_graph" height="348px" width="900px"></canvas>
+                        </div>
+                    </div>
+                    <div class="block2 card">
+                        <div class="title">Last Week</div>
+                        <div class="graph">
+                            <canvas id="lastweekGraph" height="348px" width="546px"></canvas>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="row row3">
+                    <div class="block1 card">
+                        <div class="title">Top Product Sales</div>
+                        <div class="graph">
+                            <canvas id="sales_graph" height="300px" width="350px"></canvas>
+                        </div>
+                    </div>
+                    <div class="block2 card">    
+                        <div class="title">Weather Forcast</div> 
+                        <div class="top_container">
+                            <div class="current_weather">
+                                <div class="temp" id="current_temp">12&#730;</div>
+                                <div class="weather" id="current_weather"><span>Sunny</span></div>
+                            </div>
+                            <div class="city_container">
+                                <input type="text" id="inputCity" placeholder="Enter City..." id="inputCity">
+                                <button onclick="updateWeather()">Search</button>
+                            </div>
+                        </div>
+                        <div class="bottom_container">
+                            <div class="today_weather">
+                                <div class="heading">TODAY</div>
+                                <div class="container">
+                                    <div class="icon" id="today_icon">
+                                        icon
+                                    </div>
+                                    <div class="temp_container">
+                                        <div class="temp" id="today_temp">12 &#730</div>
+                                        <div class="weather" id="today_weather">Sunny</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="dailyWeather">
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                                <div class="daily_weather">
+                                    <div class="container">
+                                        <div class="heading">Monday</div>
+                                        <div class="icon"><i class="bi bi-brightness-high fa-2x"></i></div>
+                                        <div class="temp">13 &#730</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row4">
+                    <div class="block1 card">
+                        <div class="title">Comments</div>
+                        <div class="comment_wrapper">
+                            <div class="avatar">
+                                <img src="./Images/user_image.jpg" alt="userImage">
+                            </div>
+                            <div class="comment_container">
+                                <div class="div_header">
+                                    <div class="username">Hanzala Zahid</div>
+                                    <div class="daytime">4th Aug 2021</div>
+                                </div>
+                                <div class="body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe architecto quos recusandae aliquam! Sit assumenda inventore at molestias doloribus! Error ex molestiae, officia ullam quas necessitatibus pariatur vel quisquam perferendis.
+                                </div>
+                                <div class="div_footer">
+                                    <div class="comment_status">
+                                        <button class="pending">Pending</button>
+                                        <i class="bi bi-check2 tick"></i>
+                                        <i class="bi bi-x cross"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_wrapper">
+                            <div class="avatar">
+                                <img src="./Images/user_image.jpg" alt="userImage">
+                            </div>
+                            <div class="comment_container">
+                                <div class="div_header">
+                                    <div class="username">Hanzala Zahid</div>
+                                    <div class="daytime">4th Aug 2021</div>
+                                </div>
+                                <div class="body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe architecto quos recusandae aliquam! Sit assumenda inventore at molestias doloribus! Error ex molestiae, officia ullam quas necessitatibus pariatur vel quisquam perferendis.
+                                </div>
+                                <div class="div_footer">
+                                    <div class="comment_status">
+                                        <button class="approved">Approved</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_wrapper">
+                            <div class="avatar">
+                                <img src="./Images/user_image.jpg" alt="userImage">
+                            </div>
+                            <div class="comment_container">
+                                <div class="div_header">
+                                    <div class="username">Hanzala Zahid</div>
+                                    <div class="daytime">4th Aug 2021</div>
+                                </div>
+                                <div class="body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe architecto quos recusandae aliquam! Sit assumenda inventore at molestias doloribus! Error ex molestiae, officia ullam quas necessitatibus pariatur vel quisquam perferendis.
+                                </div>
+                                <div class="div_footer">
+                                    <div class="comment_status">
+                                        <button class="rejected">Rejected</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment_wrapper">
+                            <div class="avatar">
+                                <img src="./Images/user_image.jpg" alt="userImage">
+                            </div>
+                            <div class="comment_container">
+                                <div class="div_header">
+                                    <div class="username">Hanzala Zahid</div>
+                                    <div class="daytime">4th Aug 2021</div>
+                                </div>
+                                <div class="body">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe architecto quos recusandae aliquam! Sit assumenda inventore at molestias doloribus! Error ex molestiae, officia ullam quas necessitatibus pariatur vel quisquam perferendis.
+                                </div>
+                                <div class="div_footer">
+                                    <div class="comment_status">
+                                        <button class="approved">Approved</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="block2 card">
+                        <div class="title">Chats</div>
+                        <div class="chat_wrapper">
+                            <div class="chat_header">
+                                <i class="bi bi-search"></i>
+                                <input type="search" name="search_chat" placeholder="Search...">
+                            </div>
+                            <div class="chat_body">
+                                <div class="people_list">
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                    <div class="person">
+                                        <div class="avatar">
+                                            <img src="./Images/user_image.jpg" alt="user_image">
+                                        </div>
+                                        <div class="name_time">
+                                            <div class="name">Hanzala Zahid</div>
+                                            <div class="time">Last Seen 12:39pm</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat_area">
+                                    <div class="chats">
+                                        <div class="recieved_message message_box">
+                                            <div class="avatar">
+                                                <img src="./Images/user_image.jpg" alt="user_image">
+                                            </div>
+                                            <div class="message_container">
+                                                <div class="username">Hanzala Zahid</div>
+                                                <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate voluptatum magni animi harum</div>
+                                                <div class="time">11:13pm</div>
+                                            </div>
+                                        </div>
+                                        <div class="sent_message message_box">
+                                            <div class="message_container">
+                                                <div class="username">Hanzala Zahid</div>
+                                                <div class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate voluptatum magni animi harum</div>
+                                                <div class="time">11:13pm</div>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="./Images/user_image.jpg" alt="user_image">
+                                            </div>
+                                        </div>
+                                        <div class="sent_message message_box">
+                                            <div class="message_container">
+                                                <div class="username">Hanzala Zahid</div>
+                                                <div class="message">Short Message</div>
+                                                <div class="time">11:13pm</div>
+                                            </div>
+                                            <div class="avatar">
+                                                <img src="./Images/user_image.jpg" alt="user_image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chat_input_area">
+                                        <input type="text">
+                                        <button class="send">SEND</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row5">
+                    <div class="block1 card">
+                        <div class="top">
+                            <div class="title">Total Leads</div>
+                            <select name="itemList" id="" class="items">
+                                <option value="0">Item Name</option>
+                                <option value="2">iPhone</option>
+                                <option value="3">iMac</option>
+                            </select>
+                        </div>
+                        <div class="data_wrapper">
+                            <div class="data">
+                                <div class="data_title">Overall Growth</div>
+                                <div class="data_value">80.40%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Monthly</div>
+                                <div class="data_value">15.50%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Daily</div>
+                                <div class="data_value">5.40%</div>
+                            </div>
+                        </div>
+                        <div class="graph">
+                            <canvas id="total_lead_graph" width="452px"></canvas>
+                        </div>
+                    </div>
+                    <div class="block2 card">
+                        <div class="top">
+                            <div class="title">Total Vendor</div>
+                            <div class="status status_positive">
+                                <i class="bi bi-caret-up-fill"></i>
+                                22% HIGH THEN LAST MONTH
+                            </div>
+                        </div>
+                        <div class="data_wrapper">
+                            <div class="data">
+                                <div class="data_title">Overall Growth</div>
+                                <div class="data_value">80.40%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Monthly</div>
+                                <div class="data_value">15.50%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Daily</div>
+                                <div class="data_value">5.40%</div>
+                            </div>
+                        </div>
+                        <div class="graph">
+                            <div>
+                                <canvas id="bounce_rate_graph" width="137px"></canvas>
+                                <div class="percentage">68%</div>
+                                <span>Bounce Rate</span>
+                            </div>
+                            <div>
+                                <canvas id="returning_user_graph" width="137px"></canvas>
+                                <div class="percentage">75%</div>
+                                <span>Returning User</span>
+                            </div>
+                            <div>
+                                <canvas id="new_user_graph" width="137px"></canvas>
+                                <div class="percentage">50%</div>
+                                <span>New User</span>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="block3 card">
+                        <div class="top">
+                            <div class="title">Device Users</div>
+                            <select name="itemList" id="" class="items">
+                                <option value="0">Smart Phone</option>
+                                <option value="2">iPhone</option>
+                                <option value="3">iMac</option>
+                            </select>
+                        </div>
+                        <div class="data_wrapper">
+                            <div class="data">
+                                <div class="data_title">Overall Growth</div>
+                                <div class="data_value">80.40%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Monthly</div>
+                                <div class="data_value">15.50%</div>
+                            </div>
+                            <div class="data">
+                                <div class="data_title">Daily</div>
+                                <div class="data_value">5.40%</div>
+                            </div>
+                        </div>
+                        <div class="graph_wrapper">
+                            <div class="iPhone_graph graph_container">
+                                <div class="value">1,784</div>
+                                <div class="graph">
+                                    <div class="legend">iPhone User</div>
+                                    <canvas id="iPhoneGraph" height="16px" width="468px"></canvas>
+                                </div>
+                            </div>
+                            <div class="android_graph graph_container">
+                                <div class="value">1,204</div>
+                                <div class="graph">
+                                    <div class="legend">iPhone User</div>
+                                    <canvas id="androidGraph" height="16px" width="468px"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row row6">
+                    <div class="block1 card">
+                        <div class="title">Customers List</div>
+                        <div class="table_wrapper">
+                            <table>
+                                <tr class="table_header">
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Role</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_admin">Admin</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_member">Member</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_admin">Admin</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_developer">Developer</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_supporter">Supporter</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_admin">Admin</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_member">Member</button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_admin">Admin</button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_developer">Developer</button></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Hanzala Zahid</td>
+                                    <td>hanzalazahid</td>
+                                    <td><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></td>
+                                    <td><button class="btn btn_supporter">Supporter</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="block2 card">
+                        <div class="title">Popular Product List</div>
+                        <div class="table_wrapper">
+                            <table>
+                                <tr class="table_header">
+                                    <th>#</th>
+                                    <th>Products</th>
+                                    <th>Available</th>
+                                    <th>Sales</th>
+                                    <th>User</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mac Book Pro</td>
+                                    <td>5,548</td>
+                                    <td><canvas id="popular_product_graph0" class="popular_product_graph" height="88px"></canvas></td>
+                                    <td>Return User</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>iMac</td>
+                                    <td>5,541</td>
+                                    <td><canvas id="popular_product_graph1" class="popular_product_graph" height="88px"></canvas></td>
+                                    <td>New User</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>iPhone</td>
+                                    <td>6,540</td>
+                                    <td><canvas id="popular_product_graph2" class="popular_product_graph" height="88px"></canvas></td>
+                                    <td>Return User</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>iPad</td>
+                                    <td>8,874</td>
+                                    <td><canvas id="popular_product_graph3" class="popular_product_graph" height="88px"></canvas></td>
+                                    <td>New User</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>iPod</td>
+                                    <td>982</td>
+                                    <td><canvas id="popular_product_graph4" class="popular_product_graph" height="88px"></canvas></td>
+                                    <td>New User</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row7">
+                    <div class="block1 card">
+                        <div id='app'>
+                            <v-calendar :columns="$screens({ default: 1, lg: 4 })" />
+                        </div>
+                    </div>
+                    <div class="block2 card">
+                        <div class="bottom_half">
+                            <img src="./Images/user_image.jpg" alt="developerImage">
+                            <div class="developername">Hanzala Zahid</div>
+                            <div class="designation">Designer</div>
+                            <div class="social_accounts">
+                                <a href="#facebook"><span><i class="fab fa-facebook-f"></i></span></a>
+                                <a href="#tiwtter"><span><i class="bi bi-twitter"></i></span></a>
+                                <a href="#linkedin"><span><i class="fab fa-linkedin-in"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="copyright">Copyrights &copy; <a href="#HanzalaZahid">Hanzala Zahid</a>. All rights Reserved</div>
+                <div class="t_c">
+                    <a href="#Terms">Terms of use</a>
+                    <a href="#privacy">Privacy Policy</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $('.counter').countUp({
+            delay: 10,
+            time: 1500
+        });
+</script>
+<script src="./Javascript/charts.js"></script>
+<script src="./Javascript/weather.js"></script>
+
+<!-- 1. Link Vue Javascript -->
+<script src='https://unpkg.com/vue/dist/vue.js'></script>
+
+<!-- 2. Link VCalendar Javascript (Plugin automatically installed) -->
+<script src='https://unpkg.com/v-calendar'></script>
+
+<!--3. Create the Vue instance-->
+<script>
+    new Vue({
+    el: '#app',
+    data: {
+        selectedDate: null,
+    }
+    })
+</script>
+    
+

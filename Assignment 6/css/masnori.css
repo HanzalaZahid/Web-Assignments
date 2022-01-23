@@ -1,0 +1,119 @@
+:root
+{
+    --card_border_radius:12px;
+}
+
+.card_container
+{
+    width: calc(100vw - 270px);
+    background-color: gray;
+    position: absolute;
+    right: 0px;
+    columns: 5;
+    column-gap: 1px;
+}
+.card
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+.card .image_body
+{
+    margin: 15px;
+    border-radius: var(--card_border_radius);
+}
+.card .image_body img
+{
+    width: 100%;
+    object-fit: contain;
+}
+.card .content_body
+{
+    padding: 5px 25px 25px 25px;
+}
+.card .content_body h4>a
+{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c2d2f;
+    text-decoration: none;
+    line-height: 32px;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 10px;
+}
+.card .content_body h4>a:hover
+{
+    border-bottom: 1px solid #2c2d2f;
+}
+.card .content_body .content
+{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+           line-clamp: 3; 
+   -webkit-box-orient: vertical;
+
+   font-size: 14px;
+   font-weight: 400;
+   color: rgb(92, 92, 92);
+}
+.card .content_body .read_more
+{
+    margin-top: 15px;
+    border-bottom: 2px solid #2c2d2f;
+    display: inline-block;
+
+}
+.card .content_body .read_more a
+{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #2c2d2f;
+    text-decoration: none;
+}
+.card .card_footer
+{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.card .card_footer .left
+{
+    display: flex;
+    align-items: baseline;
+}
+.card .card_footer .left .catagory a
+{
+    font-size: 11px;
+    font-weight: 400;
+    display: inline-block;
+    color: white;
+    padding: 2px 5px;
+    background-color: #2863ec;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.card .card_footer .left .time,
+.card .card_footer .right .likes
+{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.card .card_footer .left .time i
+{
+    margin-right: 4px;
+    margin-left: 20px;
+}
+
+.card .card_footer .right .likes i
+{
+    font-size: 14px;
+    color: #ec7465;
+    margin-right: 4px;
+}

@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <!-- BOOTSTRAP -->
+    <!-- CSS only -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootStrap ICONS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- JQUERY CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- NAVBAR JQUERY -->
+    <script src="./Javascript/navbar.js"></script>
+    <script src="./Javascript/responsive.js"></script>
+        <!-- JS FOR TOOGLE -->
+        <script src="./Javascript/members.js"></script>
+
+
+
+
+
+
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="header">
+            <button id="nav_toggle_button" class="toogle_nav header_button"><i class="fas fa-reply"></i></i></button>
+            <a href="#" class="header_button  toggle_element"><i class="fas fa-envelope"></i></a>
+            <a href="#" class="header_button  toggle_element"><i class="fas fa-cog"></i></a>
+            <a href="#" class="header_button toggle_element"><i class="fas fa-user"></i></a>
+        </div>
+        <div class="user_info toggle_element">
+            <div class="profile_image">
+                <img src="./Images/profile_user.jpg" alt="user_image">
+            </div>
+            <div class="name">Hanzala Zahid</div>
+            <div class="designation">Admin Manager</div>
+            <div class="insights">
+                <div class="insight">
+                    <div class="icon"><i class="bi bi-person-circle"></i></div>
+                    <div class="actions">26k+</div>
+                    <div class="progress">+14</div>
+                </div>
+                <div class="insight">
+                    <div class="icon"><i class="fas fa-paper-plane"></i></div>
+                    <div class="actions">1095</div>
+                    <div class="progress">+56</div>
+                </div>
+                <div class="insight">
+                    <div class="icon"><i class="bi bi-eye-fill"></i></div>
+                    <div class="actions">428</div>
+                    <div class="progress">+38</div>
+                </div>
+            </div>
+        </div>
+        <div class="nav_container toggle_element">
+            <ul class="nav" id="#main_nav">
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-home"></i></span><span class="title">Dashboard</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="bi bi-sliders"></i></span><span class="title">UI elements</span></a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_dropdown_item"><a href="#">Calender</a></li>
+                        <li class="nav_dropdown_item"><a href="#">Image Gallery</a></li>
+                        <li class="nav_dropdown_item"><a href="#">Support Chat</a></li>
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-file-alt"></i></span><span class="title">Sample Pages</span></a>
+                    <ul class="nav_dropdown">
+                        <li class="nav_dropdown_item"><a href="#">Calender</a></li>
+                        <li class="nav_dropdown_item"><a href="#">Image Gallery</a></li>
+                        <li class="nav_dropdown_item"><a href="#">Support Chat</a></li>
+                    </ul>
+                </li>    
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-envelope"></i></span><span class="title">Messages</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-edit"></i></span><span class="title">Forms</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="bi bi-columns"></i></span><span class="title">Grid Layout</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-receipt"></i></span><span class="title">Tables</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-signal"></i></span><span class="title">Statistics</span></a></li>
+                <li class="nav_item"><a href="#"><span class="icon"><i class="fas fa-life-ring"></i></span><span class="title">Support</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="content_wrapper">
+        <div class="header">
+            <div class="searchbar">
+                <input type="text" placeholder="Search...">
+                <i class="bi bi-search search_icon"></i>
+                <i class="bi bi-arrow-right right_arrow"></i>
+            </div>
+            <div class="left_area">
+                <div class="logo">
+                    <img src="./Images/logo.png" alt="logo">
+                </div>
+                <div class="live_button">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span>Live</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="main_content">
+            <div class="dashboard_overview">
+                <div class="top">
+                    <div class="left">
+                        <div class="container">
+                            <div class="icon"><i class="fas fa-home"></i></div>
+                            <div class="title">Dashboard</div>
+                            <div class="path">
+                                <a href="#" class="directory">Home</a>
+                                <a href="#" class="directory">Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="buttons">
+                            <button>Today</button>
+                            <button>Yesturday</button>
+                        </div>
+                        <div class="calender">
+                            <input type="date" value="2017-06-01" name="date_select" id="check">
+                            <i class="far fa-calendar"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="resume">
+                        <div class="title">Resume<br> of the day.</div>
+                        <div class="content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maior minus quam, rerum veritatis perferendis non sint ratione?</div>
+                    </div>
+                    <div class="graph">
+                        <canvas class="graph_total_balance"></canvas>
+                        <div class="information">
+                            <div class="title">Total Balance</div>
+                            <div class="progress">+43%</div>
+                        </div>
+                        <div class="count">16K</div>
+                    </div>
+                    <div class="graph">
+                        <canvas class="graph_new_members"></canvas>
+                        <div class="information">
+                            <div class="title">New members</div>
+                            <div class="progress">+65%</div>
+                        </div>
+                        <div class="count">194</div>
+                    </div>
+                    <div class="graph">
+                        <canvas class="graph_new_orders"></canvas>
+                        <div class="information">
+                            <div class="title">New orders</div>
+                            <div class="progress">+25%</div>
+                        </div>
+                        <div class="count">76</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_container">
+                <div class="statistics card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="bi bi-bar-chart-line-fill"></i></div>
+                            <div class="title">Statistics</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <canvas class="statistics_graph"></canvas>
+                    </div>
+                </div>
+
+                <div class="balance card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="title">Pie Chart</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="graph">
+                        <canvas class="balance_graph"></canvas>
+                        <div class="graph_label">
+                            <div class="value">6,184</div>
+                            <div class="label">Total Balance</div>
+                        </div>
+                        <div class="graph_output">
+                            <div class="top">+42</div>
+                            <span class="bottom">my balance</span>
+                        </div>
+                    </div>
+                    <div class="graph_details">
+                        <div class="data">
+                            <i class="bi bi-circle"></i>
+                            <div class="percent">43%</div>
+                            <div class="label">Members</div>
+                        </div>
+                        <div class="data">
+                            <i class="bi bi-circle"></i>
+                            <div class="percent">36%</div>
+                            <div class="label">Sales</div>
+                        </div>
+                        <div class="data">
+                            <i class="bi bi-circle"></i>
+                            <div class="percent">21%</div>
+                            <div class="label">Loss</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="messages card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="fas fa-comments"></i></div>
+                            <div class="title">Messages</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="nav">
+                        <a href="#">Latest</a>
+                        <a href="#">Oldest</a>
+                        <a href="#">Favorites</a>
+                    </div>
+                    <div class="messages_container">
+                        <div class="message">
+                            <a href="#profile" class="image_container">
+                                <img src="./Images/profile_user.jpg" alt="user_imaege">
+                            </a>
+                            <div class="username_info">
+                                <div class="name">Victoria Campel</div>
+                                <span>from</span>
+                                <div class="source">twitter</div>
+                                <span>/</span>
+                                <div class="time">6 hours ago</div>
+                            </div>
+                            <div class="msg">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magni inventore incidunt. Sequi ab reiciendis modi omnis voluptate!
+                            </div>
+                            <a href="#" class="btn_reply btn">
+                                <i class="bi bi-reply-fill"></i>
+                                Reply
+                            </a>
+                            <a href="#" class="btn_fav btn">
+                                <i class="bi bi-star-fill"></i>
+                                Favorite
+                            </a>
+                            <a href="#" class="btn_del btn">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </a>
+                            <a href="#" class="btn_up btn">
+                                <i class="bi bi-arrow-up"></i>
+                            </a>
+                        </div>
+                        <div class="message">
+                            <a href="#profile" class="image_container">
+                                <img src="./Images/profile_user.jpg" alt="user_imaege">
+                            </a>
+                            <div class="username_info">
+                                <div class="name">Victoria Campel</div>
+                                <span>from</span>
+                                <div class="source">twitter</div>
+                                <span>/</span>
+                                <div class="time">6 hours ago</div>
+                            </div>
+                            <div class="msg">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magni inventore incidunt. Sequi ab reiciendis modi omnis voluptate!
+                            </div>
+                            <a href="#" class="btn_reply btn">
+                                <i class="bi bi-reply-fill"></i>
+                                Reply
+                            </a>
+                            <a href="#" class="btn_fav btn">
+                                <i class="bi bi-star-fill"></i>
+                                Favorite
+                            </a>
+                            <a href="#" class="btn_del btn">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </a>
+                            <a href="#" class="btn_up btn">
+                                <i class="bi bi-arrow-up"></i>
+                            </a>
+                        </div>
+                        <div class="message">
+                            <a href="#profile" class="image_container">
+                                <img src="./Images/profile_user.jpg" alt="user_imaege">
+                            </a>
+                            <div class="username_info">
+                                <div class="name">Victoria Campel</div>
+                                <span>from</span>
+                                <div class="source">twitter</div>
+                                <span>/</span>
+                                <div class="time">6 hours ago</div>
+                            </div>
+                            <div class="msg">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magni inventore incidunt. Sequi ab reiciendis modi omnis voluptate!
+                            </div>
+                            <a href="#" class="btn_reply btn">
+                                <i class="bi bi-reply-fill"></i>
+                                Reply
+                            </a>
+                            <a href="#" class="btn_fav btn">
+                                <i class="bi bi-star-fill"></i>
+                                Favorite
+                            </a>
+                            <a href="#" class="btn_del btn">
+                                <i class="bi bi-trash"></i>
+                                Delete
+                            </a>
+                            <a href="#" class="btn_up btn">
+                                <i class="bi bi-arrow-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <button><i class="bi bi-paperclip"></i></button>
+                        <input type="text" name="SendMessage" placeholder="Leave a Message...">
+                        <button><i class="bi bi-arrow-up"></i></button>
+                    </div>
+                </div>
+                <div class="members card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="bi bi-person-fill"></i></div>
+                            <div class="title">Members</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="sub_header">
+                        <div class="left">
+                            Total Users
+                            <span class="user_count">184,036</span>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="sortbutton">
+                                Sort by
+                                <i class="bi bi-arrow-down"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="member_container">
+                        <div class="member">
+                            <a href="#" class="image_container">
+                                <img src="./Images/profile_user.jpg" alt="userImage">
+                            </a>
+                            <div class="name">Hanzala Zahid</div>
+                            <address>
+                                <i class="bi bi-geo-alt"></i>
+                                New York, United States
+                            </address>
+                            <div class="action">
+                                <i class="bi bi-check"></i>
+                            </div>
+                            <div class="expand_toggle">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                            <div class="dropdown">
+                                <div class="dd_item mail">
+                                    <div class="label">Email:</div>
+                                    <div class="value">
+                                        <a href="mailto:info@contact.com">info@contact.com</a>
+                                    </div>
+                                </div>
+                                <div class="dd_item site">
+                                    <div class="label">Site:</div>
+                                    <div class="value">
+                                        <a href="#www.companyname.com">www.companyname.com</a>
+                                    </div>
+                                </div>
+                                <div class="dd_item company">
+                                    <div class="label">Company:</div>
+                                    <div class="value">Company Name</div>
+                                </div>
+                                <div class="dd_item plan">
+                                    <div class="label">Plan:</div>
+                                    <div class="value">Premium</div>
+                                </div>
+                                <div class="dd_item messages">
+                                    <div class="label">Messages:</div>
+                                    <div class="value">
+                                        <div class="bordered_value">16</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <a href="#" class="image_container">
+                                <img src="./Images/profile_user.jpg" alt="userImage">
+                            </a>
+                            <div class="name">Hanzala Zahid</div>
+                            <address>
+                                <i class="bi bi-geo-alt"></i>
+                                New York, United States
+                            </address>
+                            <div class="action">
+                                <i class="bi bi-check"></i>
+                            </div>
+                            <div class="expand_toggle">
+                                <i class="bi bi-plus"></i>
+                            </div>
+                            <div class="dropdown">
+                                <div class="dd_item mail">
+                                    <div class="label">Email:</div>
+                                    <div class="value">
+                                        <a href="mailto:info@contact.com">info@contact.com</a>
+                                    </div>
+                                </div>
+                                <div class="dd_item site">
+                                    <div class="label">Site:</div>
+                                    <div class="value">
+                                        <a href="#www.companyname.com">www.companyname.com</a>
+                                    </div>
+                                </div>
+                                <div class="dd_item company">
+                                    <div class="label">Company:</div>
+                                    <div class="value">Company Name</div>
+                                </div>
+                                <div class="dd_item plan">
+                                    <div class="label">Plan:</div>
+                                    <div class="value">Premium</div>
+                                </div>
+                                <div class="dd_item messages">
+                                    <div class="label">Messages:</div>
+                                    <div class="value">
+                                        <div class="bordered_value">16</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_footer">
+                        <a href="#" class="loadmore">
+                            <i class="bi bi-plus"></i>
+                            <span>Load More...</span>
+                        </a>
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="alertMessage card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="title">Alert Messages</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                        </div>
+                    </div>
+                    <div class="alertMessage_container">
+                        <div class="message">
+                            <div class="icon"><i class="bi bi-check-circle"></i></div>
+                            <div class="text">Success! the page has been updated</div>
+                            <div class="cross"><a href="#cross"><i class="bi bi-x"></i></a></div>
+                        </div>
+                        <div class="message">
+                            <div class="icon"><i class="bi bi-exclamation-triangle"></i></div>
+                            <div class="text">Warning! YOur minthly traffic is getting low</div>
+                            <div class="cross"><a href="#cross"><i class="bi bi-x"></i></a></div>
+                        </div>
+                        <div class="message">
+                            <div class="icon"><i class="bi bi-info-circle"></i></div>
+                            <div class="text">Info! You have 24 unread messages</div>
+                            <div class="cross"><a href="#cross"><i class="bi bi-x"></i></a></div>
+                        </div>
+                        <div class="message">
+                            <div class="icon"><i class="bi bi-x-circle"></i></div>
+                            <div class="text">Error! The Chart page has been disabled</div>
+                            <div class="cross"><a href="#cross"><i class="bi bi-x"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="media-table card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="bi bi-grid-1x2-fill"></i></div>
+                            <div class="title">Media Table</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-plus"></i></button>
+                        </div>
+                    </div>
+                    <table class="media">
+                        <tr>
+                            <th>Post Description</th>
+                            <th>Date</th>
+                            <th>Post Info</th>
+                            <th>Del</th>
+                        </tr>
+                        <tr>
+                            <td class="post-description">
+                                <div class="layout">
+                                    <img src="./Images/profile_user.jpg" alt="random">
+                                    <div class="heading">Gravity Psd B-Card</div>
+                                    <div class="subheading">A classic approach to do something here</div>
+                                    <button class="edit">Edit</button>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="dateonly">12 Jan, 2022</div>
+                                <div class="time">15:20</div>
+                            </td>
+                            <td class="post-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                            </td>
+                            <td class="delete">
+                                <a href="#delete"><i class="bi bi-x-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="post-description">
+                                <div class="layout">
+                                    <img src="./Images/profile_user.jpg" alt="random">
+                                    <div class="heading">Gravity Psd B-Card</div>
+                                    <div class="subheading">A classic approach to do something here</div>
+                                    <button class="edit">Edit</button>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="dateonly">12 Jan, 2022</div>
+                                <div class="time">15:20</div>
+                            </td>
+                            <td class="post-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                            </td>
+                            <td class="delete">
+                                <a href="#delete"><i class="bi bi-x-circle"></i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="post-description">
+                                <div class="layout">
+                                    <img src="./Images/profile_user.jpg" alt="random">
+                                    <div class="heading">Gravity Psd B-Card</div>
+                                    <div class="subheading">A classic approach to do something here</div>
+                                    <button class="edit">Edit</button>
+                                </div>
+                            </td>
+                            <td class="date">
+                                <div class="dateonly">12 Jan, 2022</div>
+                                <div class="time">15:20</div>
+                            </td>
+                            <td class="post-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+                            </td>
+                            <td class="delete">
+                                <a href="#delete"><i class="bi bi-x-circle"></i></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="ui_elements card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="bi bi-sliders"></i></div>
+                            <div class="title">UI Elements</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="top">
+                            <div class="toggle_buttons">
+                                <div class="off">Off</div>
+                                <label class="button">
+                                    <input type="checkbox">
+                                    <i class="bi bi-record-circle off1"></i>
+                                    <span class="i">I</span>
+                                </label>
+                                <label class="button">
+                                    <input type="checkbox">
+                                    <i class="bi bi-circle-fill off1"></i>
+                                </label>
+
+
+
+                                <div class="on">On</div>
+                                <label class="button">
+                                    <input type="checkbox">
+                                    <i class="bi bi-dash-circle off1 blue"></i>
+                                    <i class="bi bi-circle on_placeholder"></i>
+                                </label>
+                                <label class="button">
+                                    <input type="checkbox">
+                                    <i class="bi bi-circle-fill off1 green"></i>
+                                </label>
+                                <!-- <i class="bi bi-dash-circle"></i> -->
+                            </div>
+                            <div class="weird_elements">
+                                <i class="fas fa-circle circle_primary"></i>
+                                <i class="far fa-dot-circle blue"></i>
+                                <i class="fas fa-plus-circle green"></i>
+                                <i class="fas fa-minus-circle red"></i>
+                                <i class="far fa-circle circle_primary"></i>
+                                <i class="fas fa-spinner"></i>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="progressbar">
+                                <i class="fas fa-play"></i>
+
+                                <div class="progress">
+                                    <div class="progress-bar music" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+
+                                <span class="text">2:35</span>
+                            </div>
+                            <div class="progressbar">
+                                <span class="text">4k</span>
+
+                                <div class="progress">
+                                    <div class="progress-bar white" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+
+                                  <span class="text">10k</span>
+                            </div>
+                            <div class="progressbar">
+                                <span class="text">32k</span>
+
+                                <div class="progress">
+                                    <div class="progress-bar green" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+
+                                <span class="passed">61k</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons card">
+                    <div class="header">
+                        <div class="left">
+                            <div class="icon"><i class="bi bi-menu-button-wide-fill"></i></div>
+                            <div class="title">Buttons</div>
+                        </div>
+                        <div class="right">
+                            <button><i class="bi bi-arrow-clockwise"></i></button>
+                            <button><i class="bi bi-x fa-lg"></i></button>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <div class="single_buttons">
+                            <button class="blue">Blue</button>
+                            <button class="green">Green</button>
+                            <button class="yellow">Yellow</button>
+                            <button class="red">Red</button>
+                            <button class="white">White</button>
+                            <button class="dark">Dark</button>
+                        </div>
+                        <div class="dropdowns">
+                            <div class="effects">
+                                <button class="active">Active</button>
+                                <button class="normal">Normal</button>
+                                <button class="hover">Hover</button>
+                            </div>
+                            <div class="dropdown">
+                                <span class="legend">Dropdown</span>
+                                <i class="bi bi-arrow-down"></i>
+                            </div>
+                            <div class="menu">
+                                <div class="option">Dropdown <i class="bi bi-arrow-up"></i></div>
+                                <div class="option">Image Gallery</div>
+                                <div class="option">Latest Features</div>
+                                <div class="option">Contact Us</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+    <!-- chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Javascript/charts.js"></script>
+
+

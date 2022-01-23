@@ -1,0 +1,157 @@
+body
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.right_area
+{
+    width: calc(100vw - 294px);
+}
+.splide .splide_item
+{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.splide .spide_image_container
+{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.671), transparent), url(../Images/slider1.jpg);
+    object-fit: contain;
+    background-position: center;
+    height: 380px;
+    /* width: 300px; */
+    border-radius: var(--card_border_radius);
+    position: relative;
+    margin: 10px 10px 10px 0px;
+}
+.splide .spide_image_container:hover
+{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.781),rgba(0, 0, 0, 0.479), transparent), url(../Images/slider1.jpg);
+}
+.splide .spide_image_container:hover .slider_item_footer
+{
+    bottom: 34px;
+    transition: all ease .2s;
+}
+.splide .spide_image_container:not(:hover) .slider_item_footer
+{
+    bottom: 24px;
+    transition: all ease .2s;
+}
+
+.splide .spide_image_container .slider_item_footer
+{
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+.splide .splide_item .title
+{
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-shadow: 1px 1px 3px rgb(0 0 0 / 30%);
+
+}
+.splide .splide_item .spide_image_container .catagory
+{
+    display: inline-block;
+    font-size: 9px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #afafaf;
+}
+
+
+
+/*      FILTER BAR      */
+/************************/
+
+.filter_bar
+{
+    display: flex;
+    align-items: center;
+    padding: 12px 0px 12px 0px;
+}
+.filter_bar .filter
+{
+    display: flex;
+    align-items: center;
+    margin-left: 26px;
+}
+.filter_bar .filter .option
+{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle;;
+}
+.filter_bar .filter .sort_button
+{
+    background-color: white;
+    border: 1px solid transparent;
+    outline: none;
+    padding: 4px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    border-radius: 5px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 4px rgb(146 158 218 / 12%);
+    cursor: pointer;
+}
+
+.filter_bar .filter .sort_button:hover
+{
+    background-color: transparent;
+    border: 1px solid black;
+}
+.filter_bar .filter .ddl_catagory
+{
+    margin-left: 10px;
+}
+.filter_bar .filter .ddl_catagory .filter_catagory_ddl
+{
+    padding: 5px 30px 5px 10px;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 2px 4px rgb(146 158 218 / 12%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.filter_bar .format .format_icons
+{
+    margin-left: 16px;
+    margin-top: -8px;
+}
+.filter_bar .format .format_icons a:hover >.tooltip
+{
+    visibility: visible;
+}
+.filter_bar .format .format_icons a
+{
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(17, 17, 17);
+    margin-right: 14px;
+}
+.filter_bar .format .format_icons a .tooltip
+{
+    position: absolute;
+    top: -12px;
+    left: -4px;
+    font-size: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+    padding: 2px 5px;
+    background-color: rgb(17, 17, 17);
+    overflow: visible;
+    visibility: hidden;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+    </body>
+</html>
+<script>
+    var arrOptions = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+    var i = 0
+    
+    function dropdownGen(idSub, optionVal)
+    {
+        let selectElem = document.createElement('select');
+        
+        let selectElemHTML = `<option>---select---</option>`;
+            selectElemHTML += `<option value="${optionVal}">${optionVal}</option>`;
+
+        selectElem.innerHTML = selectElemHTML;
+        selectElem.id = 'dropdown' + idSub;
+        document.querySelector('body').append(selectElem);
+    }
+
+    
+    function changeHandler(evt)
+    {
+        var dropdownID = evt.target.id;
+        var currentDropdown = document.getElementById(dropdownID);
+        if (arrOptions.length-1 > i && currentDropdown.value == arrOptions[i] )
+        {
+            i++;
+            dropdownGen(i, arrOptions[i]);
+        }
+    }
+    dropdownGen(i, arrOptions[i]);
+    document.addEventListener('change', changeHandler);
+</script>

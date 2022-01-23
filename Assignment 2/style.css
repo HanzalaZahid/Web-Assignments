@@ -1,0 +1,23 @@
+#container
+{
+    width: 980px;
+    height: 880px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.chessBlock
+{
+    width: 11%;
+    height: 10%;
+    float: left;
+    display: block;
+    position: relative;
+    border-style: solid;
+    background-color: rgb(29, 221, 255);
+}

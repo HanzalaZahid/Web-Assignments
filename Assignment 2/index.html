@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="container">
+        </div>
+    </body>
+</html>
+<script>
+    rows = 8;
+    cols = 8;
+    var i = 0, j = 0;
+    const _container = document.getElementById("container");
+    
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < cols; j++)
+        {
+            //console.log(i+" ,"+j);
+            const _chessBLock = document.createElement("div");
+            _chessBLock.setAttribute("class", "chessBlock");
+            _chessBLock.setAttribute("id",i.toString()+","+j.toString());
+            _chessBLock.setAttribute("onmouseover","changeRC(id)");
+            _chessBLock.setAttribute("onmouseleave","restoreRC(id)");
+            _container.appendChild(_chessBLock);
+
+        }
+    }
+    function changeRC(id)
+    {
+        //console.log("ID : "+id);
+        var pivot = id.search(",");
+        let row = parseInt(id.substring(0,pivot));
+        let col = parseInt(id.substring(pivot+1, id.length));
+        //console.log("Row : "+row+" col : "+col);
+
+        const blockList = document.getElementsByClassName("chessBlock");
+        //var end = blockList.length
+        for (var k = 0; k < blockList.length ; k++)
+        {
+            
+            console.log(k);
+            var currentBlockID = blockList[k].id;
+            const currentBlockRow = parseInt(currentBlockID.substring(0,pivot));
+            const currentBlockCol = parseInt(currentBlockID.substring(pivot+1, id.length));
+            if (currentBlockCol == col || currentBlockRow == row)
+            {
+                blockList[k].style.backgroundColor = "red";
+            }
+        }
+    }
+    function restoreRC(id)
+    {
+        //console.log("ID : "+id);
+        var pivot = id.search(",");
+        let row = parseInt(id.substring(0,pivot));
+        let col = parseInt(id.substring(pivot+1, id.length));
+        //console.log("Row : "+row+" col : "+col);
+
+        const blockList = document.getElementsByClassName("chessBlock");
+        //var end = blockList.length
+        for (var k = 0; k < blockList.length ; k++)
+        {
+            
+            console.log(k);
+            var currentBlockID = blockList[k].id;
+            const currentBlockRow = parseInt(currentBlockID.substring(0,pivot));
+            const currentBlockCol = parseInt(currentBlockID.substring(pivot+1, id.length));
+            if (currentBlockCol == col || currentBlockRow == row)
+            {
+                blockList[k].style.backgroundColor = "rgb(29, 221, 255)";
+            }
+        }
+    }
+
+</script>

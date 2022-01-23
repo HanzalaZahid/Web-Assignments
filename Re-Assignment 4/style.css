@@ -1,0 +1,471 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+/*      Header Layout Is here      */
+/***********************************/
+.main_header
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+.main_header_left .content_wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.side_div
+{
+    width: 360px;
+    padding: 8px 0px;
+}
+
+.center_div
+{
+    padding: 0px 32px;
+    flex-basis: 744px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.main_header_left
+{
+
+    
+}
+
+.main_header_center
+{
+    
+}
+
+.main_header_right
+{
+    
+}
+
+/*      Header Styles are here      */
+/************************************/
+.main_header_left .content_wrapper
+{
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.logo_wrapper
+{
+    height: 40px;
+    width: 40px;
+}
+.logo_wrapper img
+{
+    height: 40px;
+    width: 40px;
+}
+.search_wrapper
+{
+    position: relative;
+    color: #727478;
+}
+
+.search_wrapper input
+{
+    height: 40px;
+    width: 240px;
+    padding: 7px 16px 9px 36px;
+    border: none;
+    margin-left: 8px;
+    outline: none;
+    border-radius: 40px;
+    background-color: #F0F2F5;
+    color: black;
+    font-size: 15px;
+}
+.search_wrapper input:focus
+{
+    transition: margin-left 400ms, width 400ms;
+    padding-left: 16px;
+    width: 252px;
+    margin-left: -4px;
+}
+.search_wrapper input:focus+i
+{
+    left: -30px;
+    transition: left 400ms;
+}
+.search_wrapper i
+{
+    left: 22px;
+    top: 13px;
+    position: absolute;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1260px)
+{
+    .search_wrapper input
+    {
+        height: 40px;
+        width: 40px;
+        padding-right: 0px;
+    }
+}
+/* Center Header */
+/*****************/
+.nav_icon_list
+{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 56px;
+}
+
+.nav_icon_list li
+{
+    display: inline;
+    margin-left: 8px;
+}
+.nav_icon_list a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    flex-grow: 1;
+    color: #606266;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+.nav_icon_list a:active
+{
+    color: #1877F2;
+    border-color: #1877F2;
+}
+.nav_icon_list a:hover .nav_icon_hover
+{
+    background-color: #F2F2F2;
+}
+.nav_icon_list a:active .nav_icon_hover
+{
+    background-color: inherit;
+}
+.nav_icon_hover
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.nav_icon_list i
+{
+    height: 28px;
+    width: 28px;
+    display: block;
+    font-size: 24px;
+}
+
+
+@media screen and (min-width: 1100px)
+{
+    .nav_icon_list a
+    {
+        width: 111.6px;
+    }
+}
+@media screen and (max-width: 1099px)
+{
+    .nav_icon_list a
+    {
+        max-width: auto;
+        min-width: 50px;
+    }
+}
+@media screen and (max-width: 700px)
+{
+    .nav_icon_list
+    {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 680px)
+{
+    .nav_icon_list
+    {
+        display: none;
+    }
+}
+    
+.nav_icon_list li:first-child
+{
+    margin-left: 0px;
+}
+/* Right Header */
+/*****************/
+.main_header_right .content_wrapper
+{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 16px 0 4px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.main_header_right .content_wrapper .user_profile_button
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+    padding: 0 12px 0 12px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: 6px;
+}
+.main_header_right .content_wrapper .user_profile_button:hover
+{
+    background-color: #F2F2F2;
+}
+.main_header_right .content_wrapper .user_profile_button img
+{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-left: -8px;
+}
+.main_header_right .content_wrapper .user_profile_button p
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 140px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #050505;
+}
+
+@media screen and (max-width: 1260px)
+{
+    .main_header_right .content_wrapper .user_profile_button
+    {
+        visibility: hidden;
+    }
+}
+    
+
+.buttons .button
+{
+    height: 40px;
+    width: 40px;
+    background-color: #E6E8ED;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right: 8px;
+}
+.buttons .button:last-child
+{
+    margin-right: 0px;
+}
+.buttons .button:active
+{
+    color: #1770E5;
+    background-color: #DAE6F1;
+}
+.buttons .button:hover
+{
+    background-color: #D8DADF;
+}
+
+.buttons
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+/*      Main Conainter Layout is here      */
+/*******************************************/
+
+.main_container
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #F0F2F5;
+    top: 56px;
+    position: absolute;
+    width: 100%;
+}
+
+.main_container_left
+{
+
+}
+
+.main_container_right
+{
+    background-color: khaki;
+}
+
+.main_container_center
+{
+    background-color:lightcoral;
+}
+
+/*      Left Area Layout is here      */
+/**************************************/
+.main_container_left
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: calc(100vh - 72px);
+    max-height: fit-content;
+    padding: 0;
+    margin-top: 16px;
+}
+
+/* Upper Left Nav */
+/******************/
+
+.main_container_left .upper_wrapper
+{
+    padding: 0 0 8px 0;
+    margin: 0 8px;
+}
+
+.left_nav_items .item_wrapper
+{
+    display: block;
+}
+.left_nav_items .item_wrapper :hover
+{
+    background-color: #E4E6E9;
+    border-radius: 8px;
+}
+.left_nav_items .item_wrapper .item_layout
+{
+    padding: 0 8px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #050505;
+}
+.left_nav_items .item_wrapper .item_layout .item_title
+{
+    padding: 12px 0px;
+    width: 290px;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.3333;
+}
+.left_nav_items .item_wrapper .item_layout img, .left_nav_items .item_wrapper .item_layout i
+{
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    margin-right: 11px;
+}
+.left_nav_items .item_wrapper .item_layout i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 230, 235);
+    border-radius: 50%;
+}
+/* DIVIDER */
+/***********/
+
+.main_container_left .content_wrapper .divider
+{
+    margin: 0px 16px 0px;
+    border-bottom: 1px solid #CED0D4;
+    display: block;
+}
+
+
+
+/* Lower Left Nav */
+/******************/
+.main_container_left .lower_wrapper
+{
+    padding: 0 0 8px 0;
+    margin: 0 8px;
+}
+.lower_wrapper .header .header_text
+{
+    padding: 12px 16px 8px 8px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #737579;
+}
+
+/* Left Area Footer */
+/********************/
+
+.main_container_left footer
+{
+    padding: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(101, 103, 107);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.main_container_left footer ul
+{
+    list-style-type: none;
+}
+.main_container_left footer ul li
+{
+    display: inline-block;
+}
+.main_container_left footer ul a:hover
+{
+    text-decoration: underline;
+}
+
+.main_container_left footer ul li a
+{
+    color: #737579;
+}
+
+.main_container_left footer span
+{
+    margin: 0 2px 0;
+}
+
+/*      Center Area Layout is here      */
+/****************************************/
+
+.main_container_center .layout_manager .content_wrapper
+{
+    max-width: 100%;
+    min-width: 0px;
+}
+.main_container_center .layout_manager .content_wrapper .stories
+{
+    width: 680px;
+}
