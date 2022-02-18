@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: linear-gradient(120deg, #fff78abd, #ffa632d8);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header
+{
+    font-size: 1.6rem;
+}
+
+.todo_text
+{
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.btnSubmit
+{
+    background-color: #ffa632d8;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.fa-solid, .fa-trash
+{
+    pointer-events: none;
+}
+
+.todo_list
+{
+    list-style: none;
+    width: 15rem;
+}
+
+.todo_list>.item_container
+{
+    display: flex;
+    justify-content: space-between;
+}

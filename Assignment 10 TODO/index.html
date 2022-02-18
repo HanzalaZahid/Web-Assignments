@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do List</title>
+
+    <!-- CDN -->
+    <!-- FOnt Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SCRIPTS -->
+    <script src="./Javascript/behaviour.js" defer></script>
+    <script src="./Javascript/inputTodo.js" defer></script>
+    <script src="./Javascript/setElements.js" defer></script>
+    <script src="./Javascript/catagories.js" defer></script>
+
+</head>
+<body>
+    <div class="grid_container">
+        <div class="header">
+            <div class="heading">Hanzala Zahid Todo List</div>
+        </div>
+        <div class="user_info">
+            <img src="./Images/user.png" alt="usericon">
+            <div class="info">
+                <div class="name">Hanzala Zahid</div>
+                <div class="email"><a href="mailto:hanzlamirza@live.com">hanzlamirza@live.com</a></div>
+            </div>
+            <div class="task_info">
+                <div class="info total">
+                    <div class="count">0</div>
+                    <div class="label">Total</div>
+                </div>
+                <div class="info completed">
+                    <div class="count">0</div>
+                    <div class="label">Completed</div>
+                </div>
+                <div class="info primary">
+                    <div class="count">0</div>
+                    <div class="label">Primary</div>
+                </div>
+            </div>
+        </div>
+        <div class="catagories">
+            <div class="heading">Catagories</div>
+            <div class="list">
+                <ul class="catagory_list">
+
+                </ul>
+            </div>
+        </div>
+        <div class="extras">
+            <div class="heading">Tools</div>
+            <button class="btn_add_catagory">ADD CATAGOIRY</button>
+
+        </div>
+        <div class="main">
+            <div class="head">
+                <div class="left">
+                    <div class="square"></div>
+                    <div class="label">Work</div>
+                </div>
+                <div class="right">
+                    <ul class="tab_list">
+                        <li class="item all"><button>All</button></li>
+                        <li class="item completed"><button>Completed</button></li>
+                        <li class="item primary"><button>Primary</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="body">
+                <ul class="todo_list">
+
+                </ul>
+                <button class="new_todo">New Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="model_newtodo">
+        <div class="model_container">
+            <div class="head">
+                <div class="left">
+                    <div class="square"></div>
+                    <div class="label">Add New</div>
+                </div>
+                <div class="right">
+                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+            <div class="content">
+                <input type="text" class="inputTODO" id="input_todo" placeholder="Enter new Task...">
+                <div class="input_choice_container">
+                    <input type="date" class="inputDate" name="todo_date" id="input_date">
+                    <div class="select_container">
+                        <select name="select_catagory"class="select_catagory" id="select_catagory">
+                            <option value="0">--Select Catagory--</option>
+                        </select>
+                        <span class="caret"><i class="fa-solid fa-angle-down"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="foot">
+                <button class="add_todo_button">Add Task</button>
+            </div>
+        </div>
+    </div>
+    <div class="model_catagories">
+        <div class="model_container">
+            <div class="head">
+                <div class="left">
+                    <div class="square"></div>
+                    <div class="label">Add New</div>
+                </div>
+                <div class="right">
+                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+            <div class="content">
+                <input type="text" class="inputCatagory" id="input_catagory" placeholder="Enter new catagory...">
+            </div>
+            <div class="foot">
+                <button class="add_catagory_button">Add Catagory</button>
+            </div>
+        </div>
+    </div>
+    <div class="model_edit model_newtodo">
+        <div class="model_container">
+            <div class="head">
+                <div class="left">
+                    <div class="square"></div>
+                    <div class="label">Update</div>
+                </div>
+                <div class="right">
+                    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+            <div class="content">
+                <input type="text" class="inputTODO" id="input_todo" placeholder="Enter Updated Task...">
+            </div>
+            <div class="foot">
+                <button class="update_todo_button">Update</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
