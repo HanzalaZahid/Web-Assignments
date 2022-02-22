@@ -1,0 +1,25 @@
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 30px;
+    column-gap: 30px;
+}
+body
+{
+    padding: 100px 100px;
+}
+
+.item:nth-child(even)
+{
+    background-color: aqua;
+}
+.item:nth-child(odd)
+{
+    background-color: bisque;
+}
+.item
+{
+    text-align: center;
+    padding: 30px 0px;
+}
