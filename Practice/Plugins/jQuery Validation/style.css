@@ -1,0 +1,12 @@
+form .redError
+{
+    color: red
+}
+form .error
+{
+    color: red
+}
+form .redborder
+{
+    border: 2px solid red;
+}
