@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Steps</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./javascript.js" defer></script>
+    <!-- jQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jQuery Steps -->
+    <script src="./jquery-steps-master/dist/jquery-steps.min.js"></script>
+    <link rel="stylesheet" href="./jquery-steps-master/dist/jquery-steps.css">
+</head>
+<body>
+    <form action="" id="signup_form">
+        <div class="step-app" id="step_form">
+            <ul class="step-steps">
+                <li data-step-target="step1">Step 1</li>
+                <li data-step-target="step2">Step 2</li>
+                <li data-step-target="step3">Step 3</li>
+            </ul>
+            <div class="step-content">
+                <div class="step-tab-panel" data-step="1">
+                    <h3>Personal Info</h3>
+                    <div class="input_container">
+                        <input type="text" name="fname" placeholder="Fiest Name">
+                        <input type="text" name="lname" placeholder="Last Name">
+                        <input type="date" name="dob" placeholder="Date of Birth">
+                    </div>
+                </div>
+                <div class="step-tab-panel" data-step="2">
+                    <h3>COntact Info</h3>
+                    <div class="input_container">
+                        <select name="country" id="#country">
+                            <option value="">Choose Country</option>
+                            <option value="1">Paksitan</option>
+                            <option value="2">America</option>
+                            <option value="3">Uk</option>
+                        </select>
+                        <input type="text" name='state' placeholder="State/Province">
+                        <input type="text" name='city' placeholder="Enter City">
+                    </div>
+                </div>
+                <div class="step-tab-panel" data-step="3">
+                    <h3>Login Data</h3>
+                    <div class="input_container">
+                        <input type="email" name='email' placeholder="Enter Email">
+                        <input type="password" name='password' placeholder="Choose Password">
+                        <input type="password" name='cpassword' placeholder="Re-enter Password">
+                    </div>
+                </div>
+            </div>
+            <div class="step-footer">
+                <button data-step-action="prev" class="step-btn">Previous</button>
+                <button data-step-action="next" class="step-btn">Next</button>
+                <button data-step-action="finish" class="step-btn">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
