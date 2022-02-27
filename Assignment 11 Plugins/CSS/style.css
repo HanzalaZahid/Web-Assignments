@@ -1,0 +1,38 @@
+.form_container input,
+.form_container select
+{
+    padding: 10px 22px;
+    font-size: 1rem;
+}
+
+.form_container .form_group
+{
+    display: grid;
+    padding-bottom: 20px;
+}
+.form_container .gender_group>div
+{
+    display: flex!important;
+    align-items: center;
+}
+.form_container .gender_group>div>label
+{
+    margin-bottom: 0!important;
+    margin-left: 10px;
+    margin-right: 40px;
+    line-height: 1;
+}
+
+.temp_container
+{
+    width: 500px;
+}
+
+.temp_container:nth-child(even)
+{
+    background-color: aqua;
+}
+.temp_container:nth-child(odd)
+{
+    background-color: brown;
+}

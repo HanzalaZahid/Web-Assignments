@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- CDN -->
+    <!-- CDN -->
+    <!-- CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- PLUGINS -->
+    <!-- PLUGINS -->
+    <!-- PLUGINS -->
+
+    <!-- jQuery UI -->
+    <script src="./Plugins/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./Plugins/jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="./Plugins/jquery-ui-1.13.1.custom/jquery-ui.structure.min.css">
+
+    <!-- jQuery Steps -->
+    <script src="./Plugins/jquery-steps-master/build/jquery.steps.min.js"></script>
+    <link rel="stylesheet" href="./Plugins/jquery-steps-master/demo/css/jquery.steps.css">
+    <link rel="stylesheet" href="./Plugins/jquery-steps-master/demo/css/main.css">
+    <link rel="stylesheet" href="./Plugins/jquery-steps-master/demo/css/normalize.css">
+
+    <!-- jQuery Validate -->
+    <script src="./Plugins/jquery-validation-1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="./Plugins/jquery-validation-1.19.3/dist/additional-methods.min.js"></script>
+
+    <!-- Slick JS -->
+    <script src="./Plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="./Plugins/slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./Plugins/slick-1.8.1/slick/slick.css">
+
+    
+    <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
+    <script src="./Javascript/jQuerySteps.js" defer></script>
+    <script src="./Javascript/jQueryUI.js" defer></script>
+    <script src="./Javascript/slick.js" defer></script>
+</head>
+<body>
+    <div class="slider">
+        <div class="form_container">
+            <form id="form" action="">
+                <div id="step_form">
+                    <h3>Basic Info</h3>
+                    <section>
+                        <div class="form_group">
+                            <label for="firstname">First Name: </label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Enter your First Name">
+                        </div>
+                        <div class="form_group">
+                            <label for="lastname">Last Name: </label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Enter your Last Name">
+                        </div>
+                        <div class="form_group">
+                            <label for="dob">Date of Birth: </label>
+                            <input type="text" name="dob" id="dob" placeholder="Select Date">
+                        </div>
+                        <div class="form_group gender_group">
+                            <p>Gender: </p>
+                            <div>
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">Male: </label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female: </label>
+                                <label for="gender" class="error"></label>
+                            </div>
+                            
+                        </div>
+                    </section>
+                    <h3>Contact Info</h3>
+                    <section>
+                        <div class="form_group">
+                            <label for="email">Email: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form_group">
+                            <label for="phone">Phone Number: </label>
+                            <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+                        </div>
+                        <div class="form_group">
+                            <label for="password">Password: </label>
+                            <input type="password" name="password" id="password" placeholder="Enter Password">
+                        </div>
+                        <div class="form_group">
+                            <label for="cpassword">Confirm Password: </label>
+                            <input type="password" name="cpassword" id="cpassword" placeholder="Re-Enter Password">
+                        </div>
+                    </section>
+                    <h3>Postal Information</h3>
+                    <section>
+                        <div class="form_group">
+                            <label for="country">Country: </label>
+                            <select name="country" id="country">
+                                <option value="">--Select Country--</option>
+                                <option value="1">Pakistan</option>
+                                <option value="2">America</option>
+                                <option value="3">UK</option>
+                                <option value="4">Russia</option>
+                                <option value="5">Ukrane</option>
+                            </select>
+                        </div>
+                        <div class="form_group">
+                            <label for="province">Province/State: </label>
+                            <input type="text" name="province" id="province">
+                        </div>
+                    </section>
+                </div>
+            </form>
+        </div>
+        <div class="temp_container">000000000000001</div>
+        <div class="temp_container">000000000000002</div>
+        <div class="temp_container">000000000000003</div>
+        <div class="temp_container">000000000000004</div>
+        <div class="temp_container">000000000000005</div>
+        <div class="temp_container">000000000000006</div>
+    </div>
+</body>
+</html>
