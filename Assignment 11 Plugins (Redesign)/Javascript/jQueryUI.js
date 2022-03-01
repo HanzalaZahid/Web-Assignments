@@ -1,0 +1,6 @@
+$(document).ready(
+    ()=>
+    {
+        $('#dob').datepicker();
+    }
+)

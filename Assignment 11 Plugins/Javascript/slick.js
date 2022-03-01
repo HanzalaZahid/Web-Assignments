@@ -10,7 +10,7 @@ $(document).ready(()=>
             autoplay: true,
             autoplaySpeed: 1000,
             centerMode: true,
-            pauseOnHover: true,
+            pauseOnHover: true
             // prevArrow: '<button type="button" class="slick-prev">Previous</button>'
             
         }
