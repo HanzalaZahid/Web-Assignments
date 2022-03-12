@@ -1,0 +1,142 @@
+header
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    box-shadow: var(--box_shadow);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+header>.right
+{
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 100%;
+}
+header>.right>.nav_pages
+{
+    list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    /* height: 100%; */
+}
+header>.right>.nav_pages>li
+{
+    margin-right: 28px;
+    font-weight: 600;
+    display: flex;
+}
+header>.right>.nav_pages>li>a:hover
+{
+    color: var(--color_pink);
+    border-bottom: 2px solid var(--color_pink);
+}
+header>.right>.nav_pages>li>a
+{
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 4px;
+}
+
+header>.right>.nav_buttons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 22px;
+}
+header>.right>.nav_buttons>button
+{
+    margin-right: 10px;
+}
+
+header>.right>.contact_info
+{
+    border-left: var(--border_normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 28px;
+    text-decoration: none;
+    position: relative;
+}
+header>.right>.contact_info>.phone_icon
+{
+    border: var(--border_darker);
+    border-radius: 50%;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    left: -21px;
+}
+header>.right>.contact_info>.phone_icon>i
+{
+    display: block;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.5);
+}
+header>.right>.contact_info>.label
+{
+    font-weight: 700;
+}
+header>.right>.contact_info>.contact_num
+{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color_blue);
+}
+
+
+header>.logo_container
+{
+    position: absolute;
+    width: 1169px;
+}
+
+header>.logo_container>.logo_layout
+{
+    height: 154px;
+    width: 154px;
+    background-color: rgb(255, 255, 255);
+    padding: 16px;
+    border-radius: 50%;
+    margin-top: 12px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+header>.logo_container>.shadow
+{
+    background-color: rebeccapurple;
+    position: absolute;
+    display: block;
+    height: 154px;
+    width: 154px;
+    margin-top: 12px;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+header>.logo_container>.logo_layout>.logo
+{
+    display: block;
+}
+
+header>.logo_container>.logo_layout>.logo>img
+{
+    height: 100%;
+    width: 100%;
+}

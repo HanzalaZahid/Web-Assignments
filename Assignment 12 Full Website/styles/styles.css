@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;500;600;700;800;900&display=swap');*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--font_primary);
+}
+:root
+{
+    --font_primary: #363c63;
+    --color_pink: #ec1846;
+    --color_blue: #435bf6;
+
+    --blue_font: #293895; 
+
+    --border_normal: 1px solid #e8eaf6;
+    --border_darker: 1px solid #c4c9e8;
+
+    --box_shadow: 0px 2px 30px -4px rgba(0, 0, 0, 0.123);
+
+    --blue_gradient_right: linear-gradient(to right, #293895, #435bf5);
+}
+body
+{
+    background-color: #f7f8fc;
+    padding-bottom: 100px;
+}
+.main_container
+{
+    margin-top: 120px;
+}
+.wid
+{
+    width: 1300px;
+    height: 500px;
+    background-color: antiquewhite;
+
+}
+
+/* BUTTONS */
+.pink_button_gradient
+{
+    background-image: linear-gradient(to bottom, #f9335d, #ec1846);
+}
+.pink_button_gradient:hover
+{
+    background-image: linear-gradient(360deg, #f9335d, #ec1846);
+}
+.blue_button_gradient
+{
+    background-image: linear-gradient(to bottom, #435bf6, #1e33bc);
+}
+.blue_button_gradient:hover
+{
+    background-image: linear-gradient(360deg, #435bf6, #1e33bc);
+}
+.pink_shadow
+{
+    box-shadow: 0px 3px 12px -3px var(--color_pink);
+}
+.primary_button
+{
+    cursor: pointer;
+    color: white;
+    padding: 8px 22px;
+    font-size: 1.01rem;
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play_button
+{
+    color: var(--color_blue);
+    font-weight: 600;
+    font-size: 1.1rem;
+    background-color: white;
+    border: var(--border_darker);
+    box-shadow: 0px 3px 12px -3px rgba(0, 0, 0, 0.158);
+}
+.play_button>i
+{
+    background-color: var(--color_blue);
+    color: white;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    left: 9px;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 1.4rem;
+}
+.play_button>i::before
+{
+    position: absolute;
+    left: 5px;
+    top: 4px;
+}
+
+.play_button:hover
+{
+    background-color: var(--color_blue);
+    color: white;
+}
+
+.play_button:hover i
+{
+    background-color: white;
+    color: var(--color_blue);
+}
+
+.card
+{
+    background-color: white;
+    box-shadow: var(--box_shadow);
+    border-radius: 1rem;
+}
+
+
+.heading
+{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--blue_font);
+    text-align: center;
+}
+
+.details
+{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.label
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--blue_font);
+}
