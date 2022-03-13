@@ -13,6 +13,9 @@
     --color_blue: #435bf6;
     --grey_color: #e8eaf6; 
 
+    --blue_hover: #314cfc;
+    
+
     --blue_font: #293895; 
 
     --border_normal: 1px solid #e8eaf6;
@@ -25,7 +28,7 @@
 body
 {
     background-color: #f7f8fc;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 .main_container
 {

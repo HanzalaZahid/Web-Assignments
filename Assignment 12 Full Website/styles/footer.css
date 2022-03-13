@@ -1,10 +1,13 @@
 footer
 {
     display: flex;
-    justify-content: center;    
+    flex-direction: column;
+    /* justify-content: center;     */
+    align-items: center;
     background-color: #293895;
 }
-footer *
+footer *,
+footer>.footer_container>.subscribe>.email>.input_email::placeholder
 {
     color: rgba(255, 255, 255, .9)!important;
 }
@@ -12,7 +15,7 @@ footer>.footer_container
 {
     width: 60.8%;
     display: grid;
-    grid-template-columns: 2fr 1fr 3fr 2fr;
+    grid-template-columns: 2fr 1fr 4fr 3fr;
     column-gap: 2.8rem;
     padding: 3rem 0rem;
 }
@@ -26,7 +29,7 @@ footer>.footer_container>.logo
 
 footer>.footer_container>.logo>.image
 {
-    width: 50%;
+    width: 60%;
 }
 footer>.footer_container>.logo>.image>img
 {
@@ -38,11 +41,15 @@ footer>.footer_container>.logo>.contact
     display: flex;
     text-decoration: none;
 }
+footer>.footer_container>.logo>.contact:hover i
+{
+    background-color: var(--blue_hover);
+}
 footer>.footer_container>.logo>.contact>i
 {
     background-color: var(--color_blue);
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,4 +69,140 @@ footer>.footer_container>.logo>.contact>.num>.digits
 {
     font-weight: 600;
     font-size: 1.3rem;
+}
+
+footer>.footer_container>.list_container
+{
+    
+}
+footer>.footer_container>.footer_item
+{
+    padding-top: 1.2rem;
+}
+footer>.footer_container>.footer_item>.title
+{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white!important;
+    padding-bottom: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer>.footer_container>.footer_item>.list
+{
+    padding-top: 1.3rem;
+}
+footer>.footer_container>.footer_item>.list a,
+footer>.footer_container>.subscribe>.email>.input_email::placeholder
+{
+    text-decoration: none;
+    font-size: .94rem;
+    line-height: 1.6;
+}
+footer>.footer_container>.footer_item>.list a:hover
+{
+    text-decoration: underline;
+}
+
+footer>.footer_container>.footer_item>.list ul
+{
+    list-style-type: none;
+}
+
+footer>.footer_container>.courses>.list
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 1.7rem;
+}
+footer>.footer_container>.subscribe
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+footer>.footer_container>.subscribe>.title
+{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    position: relative;
+}
+footer>.footer_container>.subscribe>.title>img
+{
+    height: 32px;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+}
+footer>.footer_container>.subscribe>.email
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: .5rem;
+}
+footer>.footer_container>.subscribe>.email>.input_email
+{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    padding-bottom: 1.1rem;
+}
+footer>.footer_container>.subscribe>.email>button
+{
+    background-color: var(--color_blue);
+    align-self: flex-start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1.1rem;
+}
+footer>.footer_container>.subscribe>.email>button:hover
+{
+    background-color: #314cfc;
+}
+footer>.bottom
+{
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+footer>.bottom>.bottom_container
+{
+    width: 60.8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+footer>.bottom>.bottom_container>.address
+{
+    font-size: 0.9rem;
+}
+footer>.bottom>.bottom_container>.social
+{
+    display: flex;
+}
+footer>.bottom>.bottom_container>.social>.icon
+{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+footer>.bottom>.bottom_container>.social>.icon:hover
+{
+    background-color: var(--color_blue);
+    border-color: var(--color_blue);
+}
+footer>.bottom>.bottom_container>.social>.icon>i
+{
+    color: white;
 }

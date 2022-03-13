@@ -69,6 +69,14 @@ header>.right>.contact_info
     text-decoration: none;
     position: relative;
 }
+header>.right>.contact_info:hover .phone_icon
+{
+    background-color: var(--color_blue);
+}
+header>.right>.contact_info:hover .phone_icon>i
+{
+    color: white;
+}
 header>.right>.contact_info>.phone_icon
 {
     border: var(--border_darker);
