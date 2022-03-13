@@ -283,6 +283,7 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 12px 12px 0px #0000000f;
+    cursor: pointer;
 }
 .section4>.section_container>.top>.cards>.card:hover
 {
@@ -386,6 +387,7 @@
     box-shadow: 0px 12px 12px 0px #0000000f;
     padding-bottom: 3rem;
     margin-bottom: -10rem;
+
 }
 
 .section4>.section_container>.bottom>.card>.images
@@ -726,5 +728,98 @@
 
 .section8>.section_container
 {
-    width: 57%;
+    width: 62%;
+    padding: 4rem 0rem;
+}
+.section8>.section_container>.news_container
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.section8>.section_container>.news_container>.news
+{
+    
+    width: 100%;
+    display: grid;
+    grid-template-rows: 200px 38px 50px 90px 26px;
+}
+.section8>.section_container>.news_container>.news:last-child
+{
+
+}
+.section8>.section_container>.news_container>.news>.thumb
+{
+    padding: 0rem 1rem;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.section8>.section_container>.news_container>.news>.thumb>img
+{
+    width: 100%;
+    height: 100%;
+}
+.section8>.section_container>.news_container>.news>.thumb>.date
+{
+    display: flex;
+    align-items: center;
+    padding: 0.15rem .8rem;
+    background-color: var(--grey_color);
+    justify-self: flex-start;
+    position: absolute;
+    bottom: -12px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.section8>.section_container>.news_container>.news>.thumb>.date>.dateonly
+{
+    color: var(--color_blue);
+    font-weight: 600;
+    font-size: 1.15rem;
+    padding-right: .3rem;
+}
+.section8>.section_container>.news_container>.news>.thumb>.date>.remaining
+{
+    font-weight: 600;
+    font-size: .8rem;
+}
+.section8>.section_container>.news_container>.news>.title
+{
+    align-self: flex-end;
+    border-right: 1px solid rgba(0,0,0,.1);
+    padding: 0rem 1rem;
+}
+.section8>.section_container>.news_container>.news>.title>.label
+{
+    font-size: 1.25rem;
+}
+.section8>.section_container>.news_container>.news>.text
+{
+    /* align-self: center; */
+    padding: 0rem 1rem;
+    border-right: 1px solid rgba(0,0,0,.1);
+    display: flex;
+}
+.section8>.section_container>.news_container>.news>.text>.details
+{
+    align-items: flex-end;
+    font-size: .95rem;
+    text-align: left;
+    font-weight: 500;
+}
+.section8>.section_container>.news_container>.news>.readmore
+{
+    padding: 0rem 1rem;
+    
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+
+.section8>.section_container>.news_container>.news:last-child .text,
+.section8>.section_container>.news_container>.news:last-child .readmore,
+.section8>.section_container>.news_container>.news:last-child .title
+{
+    border-right: none;
 }
