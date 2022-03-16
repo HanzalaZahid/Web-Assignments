@@ -402,6 +402,7 @@
 {
     border-radius: 50%;
     width: 100%;
+    cursor: pointer;
 }
 .section4>.section_container>.bottom>.card>.images>.user_image>img
 {
@@ -517,6 +518,7 @@
 }
 .section5>.section_container>.left>.video>.thumb>.overlay>.overlay_elements>.play>i
 {
+    cursor: pointer;
     color: rgba(255, 255, 255, 0.9);
     font-size: 1rem;
     height: 82px;
@@ -795,6 +797,11 @@
 .section8>.section_container>.news_container>.news>.title>.label
 {
     font-size: 1.25rem;
+    text-decoration: none;
+}
+.section8>.section_container>.news_container>.news>.title>.label:hover
+{
+    text-decoration: underline;
 }
 .section8>.section_container>.news_container>.news>.text
 {
@@ -809,6 +816,11 @@
     font-size: .95rem;
     text-align: left;
     font-weight: 500;
+    text-decoration: none;
+}
+.section8>.section_container>.news_container>.news>.text>.details:hover
+{
+    text-decoration: underline;
 }
 .section8>.section_container>.news_container>.news>.readmore
 {

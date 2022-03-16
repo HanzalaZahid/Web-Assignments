@@ -206,3 +206,183 @@ footer>.bottom>.bottom_container>.social>.icon>i
 {
     color: white;
 }
+footer>.mobile_footer
+{
+    display: none;
+}
+@media screen and (max-width: 1809px)
+{
+    footer>.footer_container,
+    footer>.bottom>.bottom_container
+    {
+        column-gap: 1rem;
+    }
+}
+@media screen and (max-width: 1620px)
+{
+    footer>.footer_container,
+    footer>.bottom>.bottom_container
+    {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1316px)
+{
+    footer>.footer_container,
+    footer>.bottom>.bottom_container
+    {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1230px)
+{
+    footer>.footer_container,
+    footer>.bottom>.bottom_container
+    {
+        width: 90%;
+    }
+    /* footer>.footer_container>.logo>.contact
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer>.footer_container>.logo>.contact>.num
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    } */
+}
+
+@media screen and (max-width: 1060px)
+{
+    footer>.footer_container>.logo>.image
+    {
+        width: 80%;
+    }
+    footer>.footer_container 
+    {
+        grid-template-columns: 2fr 1fr 4fr 2fr;
+    }
+    footer>.footer_container>.subscribe>.title>img
+    {
+        top: 10px;
+    }
+}
+@media screen and (max-width: 942px)
+{
+    footer
+    {
+        flex-direction: row;
+        justify-content: center;
+        padding: 3rem 0rem;
+    }
+    footer>.footer_container
+    {
+        display: none;
+    }
+    footer>.bottom
+    {
+        display: none;
+    }
+    footer>.mobile_footer
+    {
+        display: flex;
+        width: 100%;
+    }
+    footer>.mobile_footer>.footer_container
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.8em;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>.heading
+    {
+        font-size: 2em;
+        padding-top: 1rem;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>.email
+    {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        outline: none;
+        padding-bottom: 1.1rem;
+        width: 80%;
+        margin-top: 1.6rem;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>.email::placeholder
+    {
+        color: rgba(255, 255, 255, .9);
+        font-size: 1.2rem;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>.icon
+    {
+        width: 10%;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>.icon>img
+    {
+        width: 100%;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>button
+    {
+        margin-top: 1.4rem;
+        background-color: var(--color_blue)!important;
+        background-image: none;
+        width: 40%;
+        font-weight: 600;
+    }
+    footer>.mobile_footer>.footer_container>.subscribe>button:hover
+    {
+        background-color: var(--blue_hover);
+    }
+    footer>.mobile_footer>.footer_container>.info
+    {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1em;
+    }
+    footer>.mobile_footer>.footer_container>.info>.address
+    {
+        
+    }
+    footer>.mobile_footer>.footer_container>.info>.social
+    {
+        display: flex;
+        justify-content: center;
+        margin-top: 1em;
+    }
+    
+    footer>.mobile_footer>.footer_container>.info>.social>.icon:hover
+    {
+        background-color: var(--color_blue);
+        border-color: var(--color_blue);
+    }
+    footer>.mobile_footer>.footer_container>.info>.social>.icon
+    {
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+}

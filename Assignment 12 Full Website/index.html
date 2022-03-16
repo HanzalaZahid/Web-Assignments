@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/footer.css">
 
+    <script src="./javascript/homeReviews.js" defer></script>
+    <script src="./javascript/header.js" defer></script>
+
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap Icons -->
@@ -20,9 +23,68 @@
 </head>
 <body>
     <header>
+        <div class="left">
+            <div class="nav_container_small">
+                <i class="fas fa-bars"></i>
+                <div class="nav_list">
+                    <div class="top">
+                        <div class="cancel"><i class="bi bi-x-lg"></i></div>
+                        <div class="logo">
+                            <img src="./images/desaturated_logo.png" alt="logo">
+                        </div>
+                        <a href="tel:0800797087" class="contactus">
+                            <div class="label">Toll Free:</div>
+                            <div class="num">1-800-797-087</div>
+                        </a>
+                    </div>
+                    <div class="nav_list_container">
+                        <ul class="nav">
+                            <li class="list_item"><div>WHY ATI?</div></li>
+                            <li class="list_item">
+                                <div>OUR COURSES</div>
+                                <ul class="sub_nav">
+                                    <li class="sub_item">Plumbing</li>
+                                    <li class="sub_item">Electrical</li>
+                                    <li class="sub_item">Welding</li>
+                                    <li class="sub_item">Machine Shop</li>
+                                    <li class="sub_item">Lock Smith</li>
+                                    <li class="sub_item">Professional Gunsmithing Level I Course</li>
+                                    <li class="sub_item">Professional Gunsmithing Level II Course</li>
+                                    <li class="sub_item">Master Gunsmithing Course</li>
+                                    <li class="sub_item">Enhanced Master Gunsmithing Course</li>
+                                    <li class="sub_item">Practical Gunsmithing Course</li>
+                                </ul>
+                            </li>
+                            <li class="list_item">
+                                <div>INSTRUCTIONS</div>
+                                <ul class="sub_nav">
+                                    <li class="sub_item">Plumbing</li>
+                                    <li class="sub_item">Electrical</li>
+                                    <li class="sub_item">Welding</li>
+                                    <li class="sub_item">Machine Shop</li>
+                                    <li class="sub_item">Lock Smith</li>
+                                    <li class="sub_item">Professional Gunsmithing Level I Course</li>
+                                    <li class="sub_item">Professional Gunsmithing Level II Course</li>
+                                    <li class="sub_item">Master Gunsmithing Course</li>
+                                    <li class="sub_item">Enhanced Master Gunsmithing Course</li>
+                                    <li class="sub_item">Practical Gunsmithing Course</li>
+                                </ul>
+                            </li>
+                            <li class="list_item"><div>NEWS & UPDATES</div></li>
+                            <li class="list_item"><div>CONTACT US</div></li>
+                            <li class="list_item">
+                                <button class="primary_button blue_button_gradient">Login</button>
+                                <button class="pink_button_gradient primary_button">Enroll Now!</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="logo_container">
             <div class="logo_layout">
-                <a href="index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+                <a href="index.html" class="logo"><img src="./images/logo.png" alt="logo"></a>
+                <!-- <a href="index.html" class="logo1"><img src="./images/desaturated_logo.png" alt="desaturated_logo"></a> -->
             </div>
             <!-- <div class="shadow"></div> -->
         </div>
@@ -213,11 +275,11 @@
                     </div>
                     <div class="card">
                         <div class="images">
-                            <a href="" class="user_image"><img src="./images/testimonial-1.jpg" alt="testimonial"></a>
-                            <a href="" class="user_image"><img src="./images/testimonial-2.jpg" alt="testimonial"></a>
-                            <a href="" class="user_image"><img src="./images/testimonial-3.jpg" alt="testimonial"></a>
-                            <a href="" class="user_image"><img src="./images/testimonial-4.jpg" alt="testimonial"></a>
-                            <a href="" class="user_image"><img src="./images/testimonial-5.jpg" alt="testimonial"></a>
+                            <div class="user_image user1"><img src="./images/testimonial-1.jpg" alt="testimonial"></div>
+                            <div class="user_image user2"><img src="./images/testimonial-2.jpg" alt="testimonial"></div>
+                            <div class="user_image user3"><img src="./images/testimonial-3.jpg" alt="testimonial"></div>
+                            <div class="user_image user4"><img src="./images/testimonial-4.jpg" alt="testimonial"></div>
+                            <div class="user_image user5"><img src="./images/testimonial-5.jpg" alt="testimonial"></div>
                         </div>
                         <div class="text">
                             This plumber I spoke with recently didn't believe I knew his trade and when I spoke more with he said, "You really do know what you are talking about. I'd better not do anything wrong or you'll know about it." My friends see me as different now. They see me as this person who can do all this stufff! I feel empowered and confident.
@@ -317,57 +379,57 @@
                 <div class="heading">Latest News & Updates</div>
                 <div class="news_container">
                     <div class="news">
-                        <div class="thumb">
+                        <a href="" class="thumb">
                             <div class="date">
                                 <div class="dateonly">25</div>
                                 <div class="remaining">JAN 2022</div>
                             </div>
                             <img src="./images/blog_1.png" alt="blog1">
-                        </div>
+                        </a>
                         <div></div>
                         <div class="title">
-                            <div class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <a href="" class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                         </div>
                         <div class="text">
-                            <div class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</div>
+                            <a href="" class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</a>
                         </div>
                         <div class="readmore">
                             <button class="readmore_button">Read More</button>
                         </div>
                     </div>
                     <div class="news">
-                        <div class="thumb">
+                        <a href="" class="thumb">
                             <div class="date">
                                 <div class="dateonly">25</div>
                                 <div class="remaining">JAN 2022</div>
                             </div>
                             <img src="./images/blog_2.png" alt="blog2">
-                        </div>
+                        </a>
                         <div></div>
                         <div class="title">
-                            <div class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <a href="" class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                         </div>
                         <div class="text">
-                            <div class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</div>
+                            <a href="" class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</a>
                         </div>
                         <div class="readmore">
                             <button class="readmore_button">Read More</button>
                         </div>
                     </div>
                     <div class="news">
-                        <div class="thumb">
+                        <a href="" class="thumb">
                             <div class="date">
                                 <div class="dateonly">25</div>
                                 <div class="remaining">JAN 2022</div>
                             </div>
                             <img src="./images/blog_3.png" alt="blog3">
-                        </div>
+                        </a>
                         <div></div>
                         <div class="title">
-                            <div class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                            <a href="" class="label">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
                         </div>
                         <div class="text">
-                            <div class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</div>
+                            <a href="" class="details">Lorem ipsum dolor tenetur, excepturi, voluptatem a qui, consequuntur maxime et omnis saepe cumque itaque eveniet id.</a>
                         </div>
                         <div class="readmore">
                             <button class="readmore_button">Read More</button>
@@ -437,6 +499,25 @@
                 <div class="social">
                     <a href="#" class="linkedin icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="facebook icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_footer">
+            <div class="footer_container">
+                <div class="subscribe">
+                    <div class="icon">
+                        <img src="./images/email.png" alt="">
+                    </div>
+                    <div class="heading">Subscribe to our Newsletter</div>
+                    <input type="email" name="" id="" class="email" placeholder="Your Email">
+                    <button class="primary_button blue_button_gradient">Subscribe</button>
+                </div>
+                <div class="info">
+                    <div class="address">&copy; Accelerated Training Institute.<br>351 Second Street Napa CA 94559</div>
+                    <div class="social">
+                        <a href="#" class="linkedin icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="facebook icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
