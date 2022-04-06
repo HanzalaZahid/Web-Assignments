@@ -5,6 +5,16 @@ let name = document.querySelector('.reviews .bottom .card .about>.name');
 let nameArray = ["Hanzala","Basit Dante","Ali Nawaz","Rana Abdur Rehman","Hassan"]
 
 
+let forwardArrow = document.querySelector('.slick-next');
+let backArrow = document.querySelector('.slick-prev');
+
+// forwardArrow.addEventListener('click', function(){
+//     updateReview(1)
+// // })
+// backArrow.addEventListener('click', function(){
+//     updateReview(1)
+// })
+
 function updateReview(user)
 {
     // console.log("update")
@@ -20,3 +30,4 @@ userImage.forEach(image=>{
         updateReview(image.classList[1])
     })
 })
+
