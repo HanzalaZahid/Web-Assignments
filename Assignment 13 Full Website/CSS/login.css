@@ -1,0 +1,131 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body
+{
+    /* padding: 40px; */
+}
+body>.container
+{
+    height: 600px;
+    width: 574px;
+    /* background-color: #EBEBEB; */
+    /* background-color: #fff43435; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    /* display: flex; */
+}
+.container>.logo
+{
+    display: flex;
+    justify-content: center;
+}
+.container>.logo>img 
+{
+    height: 184px;
+    width: 421px;
+}
+.container>.login_container
+{
+    background-color: #EBEBEB;
+    /* height: 100px; */
+    padding: 38px 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.container>.login_container>.container
+{
+    margin-bottom: 18px;
+}
+.container>.login_container>.container>input
+{
+    padding: 12px 22px;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.container>.login_container>.container>p
+{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.container>.login_container>.footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+.container>.login_container>.footer>.rememberme
+{
+    display: flex;
+    align-items: flex-end;
+}
+.container>.login_container>.footer p
+{
+    display: inline;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+.container>.login_container>.footer input
+{
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+}
+.container>.login_container>.footer button
+{
+    padding: 10px 24px;
+    font-weight: 400;
+    color: goldenrod;
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container>.forgetPassword
+{
+    padding-left: 40px;
+    padding-top: 24px;
+}
+
+.container>.forgetPassword>a
+{
+    color: goldenrod;
+}
+
+
+@media screen and (max-width: 650px)
+{
+    body>.container
+    {
+        width: 90%;
+    }
+    .container>.login_container>.footer
+    {
+        flex-direction: column;
+    }
+    .container>.login_container>.footer button
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .container>.forgetPassword
+    {
+        text-align: center;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
