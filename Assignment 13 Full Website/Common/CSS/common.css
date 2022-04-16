@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+:root
+{
+
+    /* COLORS */
+    --darkest_blue: #182041;
+    --dark_blue: #222F64;
+    --light_blue: #005FDB;
+    --medium_blue: #32479F;
+    --red: #B52D3C;
+    --red_hover: #ce0119;
+    --golden: #B58D34;
+    --brown: #6C3E11;
+    --grey: #ECECEC;
+    
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+}
+.section_wrapper
+{
+    width: 1600px;
+}
+
+@media screen and (max-width: 1654px)
+{
+    .section_wrapper
+    {
+        padding-left: 27px!important;
+        padding-right: 27px!important;
+    }
+}
