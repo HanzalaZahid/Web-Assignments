@@ -96,6 +96,10 @@ header>.top>.section_wrapper>.icons>.button
     margin-left: 12px;
     text-decoration: none;
 }
+header>.top>.section_wrapper>.icons>.button:first-child
+{
+    margin-left: 0px;
+}
 header>.bottom
 {
     
