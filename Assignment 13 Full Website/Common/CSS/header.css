@@ -3,6 +3,9 @@ header
     /* display: flex;
     justify-content: center; */
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.062);
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 header>.top
 {
@@ -78,6 +81,7 @@ header>.top>.section_wrapper>.icons>.menu,
 header>.top>.section_wrapper>.icons>.search
 {
     display: none!important;
+    cursor: pointer;
 }
 header>.top>.section_wrapper>.icons>.button
 {
@@ -169,24 +173,168 @@ header>.bottom>.wrapper>.header_nav>li>button:hover
 }
 @media screen and (max-width: 1050px)
 {
-    header>.top>.section_wrapper>.icons>a
+    header>.top>.section_wrapper
     {
-        display: none!important;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 18px;
+        grid-template-areas: "logo icons"
+        "search search";
+    }
+    header>.top>.section_wrapper>.logo
+    {
+        grid-area: logo;
+    }
+    header>.top>.section_wrapper>.search
+    {
+        grid-area: search;
+        margin: 0;
+    }
+    header>.top>.section_wrapper>.icons
+    {
+        grid-area: icons;
+    }
+    
+}
+
+@media screen and (max-width: 676px)
+{
+    header>.top>.section_wrapper
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo"
+        "icons"
+        "search";
+        place-items: center;
+    }
+    header>.top>.section_wrapper>.icons
+    {
+        justify-self: center;
+    }
+    header>.top>.section_wrapper>.search
+    {
+        width: 100%;
     }
     header>.top>.section_wrapper>.icons>.menu
     {
         display: flex!important;
     }
-}
-@media screen and (max-width: 850px)
-{
-
-    header>.top>.section_wrapper>.icons>.search
-    {
-        display: flex!important;
-    }
-    header>.top>.section_wrapper>.search
+    header>.bottom
     {
         display: none;
     }
+}
+
+@media screen and (max-width: 1160px)
+{
+    header>.bottom>.wrapper>.header_nav
+    {
+        margin: 0px 22px;
+    }
+}
+@media screen and (max-width: 988px)
+{
+    header>.bottom>.wrapper>.header_nav>li>a,
+    header>.bottom>.wrapper>.header_nav>li>button
+    {
+        padding: 2px 16px;
+    }
+}
+@media screen and (max-width: 858px)
+{
+    header>.bottom>.wrapper>.header_nav>li>a,
+    header>.bottom>.wrapper>.header_nav>li>button
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 780px)
+{
+    header>.bottom>.wrapper>.header_nav>li>a,
+    header>.bottom>.wrapper>.header_nav>li>button
+    {
+        padding: 2px 8px;
+    }
+}
+
+
+header>.popup_nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: none;
+    z-index: 100;
+}
+header>.popup_nav>.popup_nav_container
+{
+    margin: 0px 27px;
+}
+header>.popup_nav>.popup_nav_container>.head
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.062);
+    padding: 26px 0px;
+}
+header>.popup_nav>.popup_nav_container>.head>.logo
+{
+    height: 63px;
+    width: 306px;
+}
+header>.popup_nav>.popup_nav_container>.head>.logo>img
+{
+    height: 100%;
+    width: 100%;
+}
+header>.popup_nav>.popup_nav_container>.head>.cross
+{
+    justify-self: right;
+    align-self: center;
+}
+header>.popup_nav>.popup_nav_container>.head>.cross>i
+{
+    font-size: 28px;
+    color: var(--dark_blue);
+    cursor: pointer;
+}
+header>.popup_nav>.popup_nav_container>.head>.cross>i:hover
+{
+    color: var(--darkest_blue);
+}
+header>.popup_nav>.popup_nav_container>.nav
+{
+    list-style-type: none;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* padding: 0px 27px; */
+}
+header>.popup_nav>.popup_nav_container>.nav>li
+{
+    font-size: 21px;
+    font-weight: 600;
+    /* color: var(--dark_blue); */
+    width: 100%;
+}
+header>.popup_nav>.popup_nav_container>.nav>li>a
+{
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--dark_blue);
+    text-decoration: none;
+    display: block;
+    padding: 18px 0px;
+    text-align: center;
+    border-bottom: 1px solid var(--dark_blue);
+}
+
+header>.popup_nav>.popup_nav_container>.nav>li>a:hover
+{
+    color: var(--darkest_blue);
+    border-bottom: 2px solid var(--darkest_blue);
 }
