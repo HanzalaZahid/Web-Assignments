@@ -1,0 +1,200 @@
+.page_content>.home_banner
+{
+    background-image: url(../Images/GCA-WebBanner-Layout.png);
+}
+
+/* MEMBERSHIP SECTION */
+/* MEMBERSHIP SECTION */
+
+.page_content>.membership_section
+{
+    
+}
+.page_content>.membership_section>.section_wrapper>.section_title
+{
+    padding-top: 48px;
+    padding-bottom: 22px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 52px;
+    row-gap: 26px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card
+{
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.253);
+    border-radius: 12px;
+    padding: 22px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon
+{
+    height: 78px;
+    width: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon>span
+{
+    position: absolute;
+    font-size: 18px;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.icon>img
+{
+    height: 100%;
+    width: 100%;
+}
+.page_content>.membership_section>.section_wrapper>.card_container>.card>.detail
+{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1150px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container>.card
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page_content>.membership_section>.section_wrapper>.card_container>.card>.detail
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width:1100px)
+{
+    .page_content>.membership_section>.section_wrapper>.section_title
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 690px)
+{
+    .page_content>.membership_section>.section_wrapper>.card_container
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* SECTION 3
+WELCOME SECTION */
+
+.page_content>.section_welcome>.section_wrapper
+{
+    display: flex;
+    margin-top: 68px;
+}
+.page_content>.section_welcome>.section_wrapper>.left
+{
+    padding-right: 140px;
+}
+.page_content>.section_welcome>.section_wrapper>.left>.section_title
+{
+    margin-bottom: 22px;
+    grid-area: welcome_title;
+}
+.page_content>.section_welcome>.section_wrapper>.left>.details
+{
+    grid-area: welcome_details;
+}
+
+.page_content>.section_welcome>.section_wrapper>.right
+{
+    
+}
+.page_content>.section_welcome>.section_wrapper>.right>.video_container
+{
+    width: 696px;
+    height: 343px;
+    border-radius: 12px;
+    grid-area: welcome_video;
+}
+.page_content>.section_welcome>.section_wrapper>.right>.video_container>img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1380px)
+{
+    .page_content>.section_welcome>.section_wrapper>.left
+    {
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: 1280px)
+{
+    .page_content>.section_welcome>.section_wrapper
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left>.section_title,
+    .page_content>.section_welcome>.section_wrapper>.left>.details
+    {
+        text-align: center;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left>.details
+    {
+        padding-bottom: 22px;
+    }
+    .page_content>.section_welcome>.section_wrapper>.left
+    {
+        padding: 0;
+    }
+}
+@media screen and (max-width: 777px)
+{
+    .page_content>.section_welcome>.section_wrapper>.right>.video_container
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* WHAT YOULL LEARN SECTION
+SECTION4 */
+
+.page_content>.section_learn
+{
+    
+}
+.page_content>.section_learn>.section_wrapper
+{
+
+}
+.page_content>.section_learn>.section_wrapper>.section_title
+{
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+@media screen and (max-width:720px)
+{
+    .page_content>.section_learn>.section_wrapper>.section_title
+    {
+        text-align: center;
+    }
+}
+
+/* FAQ SECTION */
+
+.page_content>.section_faq
+{
+    padding-top: 80px;
+}

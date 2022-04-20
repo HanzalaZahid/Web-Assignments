@@ -6,6 +6,7 @@ header
     position: fixed;
     width: 100%;
     background-color: white;
+    z-index: 100;
 }
 header>.top
 {
@@ -95,6 +96,11 @@ header>.top>.section_wrapper>.icons>.button
     align-items: center;
     margin-left: 12px;
     text-decoration: none;
+}
+header>.top>.section_wrapper>.icons>.button:hover
+{
+    background-color: var(--darkest_blue);
+    /* color: var(--light_blue); */
 }
 header>.top>.section_wrapper>.icons>.button:first-child
 {
