@@ -1,0 +1,140 @@
+.section_about
+{
+    
+}
+.section_about>.section_wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 98px 0px;
+}
+.section_about>.section_wrapper>.left
+{
+    max-width: 71.5%;
+}
+.section_about>.section_wrapper>.left *
+{
+    font-size: 20px;
+}
+.section_about>.section_wrapper>.left>.text:first-child
+.section_about>.section_wrapper>.left>.text:first-child
+{
+    font-size: 22px;
+    padding-bottom: 48px;
+}
+.section_about>.section_wrapper>.left ul
+{
+    list-style-position: inside;
+}
+.section_about>.section_wrapper>.left .list *
+{
+    line-height: 2;
+}
+.section_about>.section_wrapper>.right
+{
+    height: 350px;
+    width: 350px;
+}
+.section_about>.section_wrapper>.right>.logo
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 2px #0000003b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_about>.section_wrapper>.right>.logo>img
+{
+    width: 80%;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 1442px)
+{
+    .section_about>.section_wrapper>.right
+    {
+        height: 300px;
+        width: 300px;
+    }
+    .section_about>.section_wrapper>.left .list>.label
+    {
+        padding: 12px 0px;
+    }
+}
+@media screen and (max-width: 1288px)
+{
+    .section_about>.section_wrapper>.right
+    {
+        margin-left: 22px;
+    }
+}
+@media screen and (max-width: 1208px)
+{
+    .section_about>.section_wrapper>.right
+    {
+        height: 250px;
+        width: 250px;
+    }
+}
+@media screen and (max-width: 1015px)
+{
+    .section_about>.section_wrapper>.left
+    {
+        max-width: 60%;
+    }
+}
+@media screen and (max-width: 815px)
+{
+    .section_about>.section_wrapper
+    {
+        display: grid;
+        grid-template-areas: "top"
+        "bottom";
+        row-gap: 48px;
+    }
+    .section_about>.section_wrapper>.left
+    {
+        min-width: 1;
+        max-width: 100%;
+        grid-area: bottom;
+    }
+    .section_about>.section_wrapper>.right
+    {
+        /* max-width: 50%; */
+        grid-area: top;
+        width: 250px;
+        height: 250px;
+        place-self: center;
+    }
+}
+
+
+
+
+
+
+.page_content>.section_faq
+{
+    padding-top: 80px;
+}
+
+.page_content>.section_learn>.section_wrapper>.section_title
+{
+    /* padding-top: 48px; */
+    padding-bottom: 24px;
+}
+@media screen and (max-width:720px)
+{
+    .page_content>.section_learn>.section_wrapper>.section_title
+    {
+        text-align: center;
+    }
+}
+
+.page_content>.section_president_message
+{
+    background-color: white;
+}

@@ -219,6 +219,7 @@ section
     padding: 0px 22px;
     padding-top: 14px;
     padding-bottom: 20px;
+    cursor: pointer;
 }
 .learn_card_container>.learn_card>.details
 {
@@ -860,4 +861,39 @@ section
     {
         min-width: 250px;
     }
+}
+
+
+
+/* PRIMARY BANNER */
+
+.section_primary_banner>.section_wrapper>.banner
+{
+    background-image: url(../Images/banner_about.jpg);
+    height: 208px;
+    background-size: cover;
+    background-position: right;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.section_primary_banner>.section_wrapper>.banner>.gradient
+{
+    height: 60%;
+    width: 100%;
+    background-image: linear-gradient(360deg, #222F64, transparent);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.section_primary_banner>.section_wrapper>.banner>.page_title
+{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 22px;
+    position: absolute;
+    bottom: 22px;
+    line-height: 1;
 }
