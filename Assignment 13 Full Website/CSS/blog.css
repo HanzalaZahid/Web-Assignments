@@ -1,0 +1,12 @@
+.section_primary_banner>.section_wrapper>.banner {
+    background-image: url(../Images/banner_blog.jpg);
+}
+
+.section_articles
+{
+    margin-top: 100px;
+}
+.section_articles>.section_wrapper
+{
+    padding-bottom: 100px;
+}

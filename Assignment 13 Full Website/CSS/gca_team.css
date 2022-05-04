@@ -1,0 +1,106 @@
+.section_primary_banner>.section_wrapper>.banner
+{
+    background-image: url(../Images/banner_gca_team.jpg);
+
+}
+.section_team
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section_team .member
+{
+    
+}
+.member>.image
+{
+    width: 100%;
+    object-fit: cover;
+    /* height: 100%; */
+}
+.member>.image>img
+{
+    max-width: 100%;
+}
+.member>.text
+{
+    padding: 22px;
+}
+.member>.text>.name
+{
+    font-size: 30px;
+    line-height: 1;
+    color: var(--dark_blue);
+    padding-bottom: 14px;
+}
+.member>.text>.desgignation
+{
+    color: var(--red);
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 18px;
+}
+.member>.text>.designation>.deatils
+{
+    font-size: 20px;
+}
+
+.section3 .section_title
+{
+    padding-bottom: 32px;
+}
+.section3>.section_wrapper
+{
+    padding-bottom: 100px;
+}
+
+@media screen and (max-width: 1445px)
+{
+    .section3 .desgignation
+    {
+        height: 82px;
+    }
+}
+@media screen and (max-width: 1109px)
+{
+    .section3 .name
+    {
+        height: 74px;
+    }
+}
+@media screen and (max-width: 960px)
+{
+    .section3 .name
+    {
+        height: auto;
+    }
+}
+@media screen and (max-width: 753px)
+{
+    .section3 .name
+    {
+        height: 74px;
+    }
+}
+@media screen and (max-width: 690px)
+{
+    .section3 .name,
+    .section3 .desgignation
+    {
+        height: auto;
+    }
+    .section3 .section_title
+    {
+        text-align: center;
+    }
+    .member>.text
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .member>.text>.deatils
+    {
+        text-align: center;
+    }
+}
