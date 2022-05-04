@@ -14,8 +14,8 @@
     <!-- STYLESHEETS -->
     
     <link rel="stylesheet" href="Common/CSS/common.css">
-    <link rel="stylesheet" href="CSS/home.css">
-    <link rel="stylesheet" href="Common/CSS/header.css">
+    <link rel="stylesheet" href="CSS/gca_team.css">
+    <link rel="stylesheet" href="Common/CSS/header_admin.css">
     <link rel="stylesheet" href="Common/CSS/footer.css">
 
     <!-- SCRIPTS -->
@@ -49,14 +49,16 @@
         </div>
         <div class="bottom">
             <div class="wrapper">
+                <button class="menu_toggle menu_toggle_open ">Open Menu</button>
+                <button class="menu_toggle menu_toggle_close">Close Menu</button>
                 <ul class="header_nav">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">THE GCA TEAM</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><button>SIGN UP</button></li>
-                    <li><button>SIGN IN</button></li>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><button>SIGN OUT</button></li>
+                    <li><a href=""><div class="count">20</div><img src="./Images/logo_headertype.png" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -69,19 +71,33 @@
                     <div class="cross"><i class="fa-solid fa-circle-xmark"></i></div>
                 </div>
                 <ul class="nav">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">THE GCA TEAM</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a class="button btn_signup" href="">SIGNUP</a></li>
-                    <li><a class="button btn_signup" href="">SIGNIN</a></li>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                    <li><a class="button btn_signup btn_signout" href="">SIGNOUT</a></li>
                 </ul>
             </div>
         </div>
     </header>
-    <div class="content">
-        lorem*100
+    <nav class="admin_nav">
+        <ul class="nav_list">
+            <li><a href="">
+                <div class="icon"></div>
+                <div class="text toggle_item"></div>
+            </a></li>
+        </ul>
+    </nav>
+    <div class="page_content">
+        <section class="section_primary_banner section1">
+            <div class="section_wrapper">
+                <div class="banner">
+                    <div class="gradient"></div>
+                    <a href="" class="page_title">ABOUT</a>
+                </div>
+            </div>
+        </section>
     </div>
     <footer>
         <div class="top">
@@ -95,9 +111,9 @@
                 <div class="center">
                     <div class="title">USEFUL LINKS</div>
                     <ul class="links">
-                        <li><a href="">ABOUT US</a></li>
-                        <li><a href="">CONTACT US</a></li>
-                        <li><a href="">BLOG</a></li>
+                        <li><a href="./about.html">ABOUT US</a></li>
+                        <li><a href="./contact.html">CONTACT US</a></li>
+                        <li><a href="./blog.html">BLOG</a></li>
                         <li><a href="">PRIVACY POLICY</a></li>
                         <li><a href="">TERMS & CONDITIONS</a></li>
                     </ul>
@@ -120,6 +136,5 @@
             Copyright Gunsmithing Clud Of America, All Rights Reserved.
         </div>
     </footer>
-      
 </body>
 </html>

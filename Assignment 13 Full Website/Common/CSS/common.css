@@ -73,8 +73,8 @@ section
 {
     .section_wrapper
     {
-        padding-left: 27px!important;
-        padding-right: 27px!important;
+        margin-left: 27px!important;
+        margin-right: 27px!important;
         max-width: 100%;
     }
 }
@@ -874,7 +874,10 @@ section
 
 
 /* PRIMARY BANNER */
-
+.section_primary_banner>.section_wrapper
+{
+    padding-top: 48px;
+}
 .section_primary_banner>.section_wrapper>.banner
 {
 
@@ -904,6 +907,7 @@ section
     position: absolute;
     bottom: 22px;
     line-height: 1;
+    text-transform: uppercase;
 }
 
 
@@ -935,4 +939,104 @@ section
     {
         grid-template-columns: 1fr;
     }
+}
+
+/* PATH SECTION */
+
+.section_path
+{
+    
+}
+.section_path>.section_wrapper
+{
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    display: flex;
+    padding: 26px 22px;
+    margin-top: 22px;
+    font-size: 10px;
+    margin-bottom: 32px;
+}
+.section_path>.section_wrapper *
+{
+    font-size: 2.3em;
+}
+.section_path>.section_wrapper>.dir
+{
+    color: black;
+}
+.section_path>.section_wrapper>.dir::after
+{
+    content: " / ";
+    white-space: pre;
+    /* text-decoration: none; */
+    display: inline-block;
+}
+.section_path>.section_wrapper>.dir_current::after
+{
+    content: "";
+}
+.section_path>.section_wrapper>.dir_current
+{
+    text-decoration: none;
+}
+.section_path>.section_wrapper>.dir_current:hover
+{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .section_path>.section_wrapper
+    {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .section_path>.section_wrapper
+    {
+        font-size: 7px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .section_path>.section_wrapper
+    {
+        font-size: 6px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+}
+
+
+/* ADMIN NAV */
+/* ADMIN NAV */
+
+.admin_nav
+{
+    
+}
+.admin_nav>.nav_list
+{
+
+}
+.admin_nav>.nav_list>li
+{
+
+}
+.admin_nav>.nav_list>li>a
+{
+
+}
+.admin_nav>.nav_list>li>a>.icon
+{
+    height: 64px;
+    width: 64px;
+    background-color: var(--dark_blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

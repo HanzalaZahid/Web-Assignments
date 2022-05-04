@@ -1,0 +1,43 @@
+.section_primary_banner>.section_wrapper>.banner
+{
+    background-image: url(../Images/banner_silver_membership.jpg);
+}
+
+.section_details
+{
+    
+}
+.section_details>.section_wrapper
+{
+    padding-bottom: 100px;
+}
+.section_details>.section_wrapper>.title
+{
+    font-size: 23px;
+    color: var(--red);
+    padding-bottom: 32px;
+}
+.section_details>.section_wrapper>.heading,
+.section_details>.section_wrapper>ul *
+{
+    font-size: 20px;
+    line-height: 2;
+}
+.section_details>.section_wrapper>ul
+{
+    list-style-position: inside;
+}
+.section_details>.section_wrapper>button
+{
+    font-size: 22px;
+    padding: 14px 42px;
+    margin-top: 22px;
+}
+
+@media screen and (max-width: 690px)
+{
+    .section_details>.section_wrapper>button
+    {
+        width: 100%;
+    }
+}
