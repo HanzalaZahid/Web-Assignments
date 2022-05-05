@@ -20,8 +20,9 @@
 {
     .section_admin
     {
-        margin-left: 27px!important;
-        margin-right: 27px!important;
+        /* margin-left: 27px!important; */
+        /* margin-right: 27px!important; */
+        padding: 0 27px 0 88px;
         max-width: 100%;
     }
 }
