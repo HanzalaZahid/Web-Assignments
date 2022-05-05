@@ -82,11 +82,20 @@ section
 {
     padding-top: 159px;
 }
+.admin_nav
+{
+    top: 159px;
+}
+
 @media screen and (max-width: 1050px)
 {
     .page_content
     {
         padding-top: 228px;
+    }
+    .admin_nav
+    {
+        top: 228px;
     }
 
 }
@@ -96,6 +105,7 @@ section
     {
         padding-top: 249px;
     }
+
 }
 
 .section_title
@@ -1011,32 +1021,26 @@ section
     }
 }
 
-
-/* ADMIN NAV */
-/* ADMIN NAV */
-
-.admin_nav
-{
-    
-}
-.admin_nav>.nav_list
-{
-
-}
-.admin_nav>.nav_list>li
-{
-
-}
-.admin_nav>.nav_list>li>a
-{
-
-}
-.admin_nav>.nav_list>li>a>.icon
-{
-    height: 64px;
-    width: 64px;
-    background-color: var(--dark_blue);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/* SCROLLBARS */
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark_blue); 
+    border-radius: 10px;
+    /* width: 7px; */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--darkest_blue); 
+  }

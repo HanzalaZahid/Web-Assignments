@@ -14,13 +14,15 @@
     <!-- STYLESHEETS -->
     
     <link rel="stylesheet" href="Common/CSS/common.css">
-    <link rel="stylesheet" href="CSS/gca_team.css">
+    <link rel="stylesheet" href="CSS/admin_template.css">
     <link rel="stylesheet" href="Common/CSS/header_admin.css">
+    <link rel="stylesheet" href="Common/CSS/nav_admin.css">
     <link rel="stylesheet" href="Common/CSS/footer.css">
 
     <!-- SCRIPTS -->
 
     <script src="./Common/JS/header.js" defer></script>
+    <script src="./Common/JS/nav_admin.js" defer></script>
 
     <!-- FONT AWESOME-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -83,19 +85,164 @@
     </header>
     <nav class="admin_nav">
         <ul class="nav_list">
-            <li><a href="">
-                <div class="icon"></div>
-                <div class="text toggle_item"></div>
-            </a></li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <div class="text toggle_item">GCA Live</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="text toggle_item">Forum</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">Members Directory</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text toggle_item">Students</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+                    <div class="text toggle_item">Over The Gunsmith's Shoulder</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <div class="text toggle_item">In The Classroom</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="text toggle_item">Courses</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">GunTech Digital And Print Magazine</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <div class="text toggle_item">Guntech Reference Index</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <div class="text toggle_item">Our Partners</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text toggle_item">Members Store</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                    </div>
+                    <div class="text toggle_item">Resources</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="text toggle_item">Member Articles</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <div class="text toggle_item">Submit</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div class="text toggle_item">Hands On With Ken Brooks</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-brands fa-wikipedia-w"></i>
+                    </div>
+                    <div class="text toggle_item">Gunpedia</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+                    <div class="text toggle_item">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <div class="text toggle_item">Contact</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="text toggle_item">FFL Gold Members</div>
+                </a>
+            </li>
         </ul>
     </nav>
     <div class="page_content">
-        <section class="section_primary_banner section1">
-            <div class="section_wrapper">
-                <div class="banner">
-                    <div class="gradient"></div>
-                    <a href="" class="page_title">ABOUT</a>
-                </div>
+        <section class="section_admin">
+            <div class="section_case">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam accusamus, tenetur aspernatur obcaecati quibusdam officiis corrupti alias eligendi! Maxime quisquam repellendus blanditiis rerum? Aspernatur, quam ad? Saepe deleniti fuga rerum ratione animi earum nisi, sit libero, laudantium assumenda officia quasi blanditiis similique atque mollitia beatae ex, unde repudiandae. Eos numquam porro blanditiis unde atque nulla repellat quis, illum veniam iure, dignissimos doloribus vero fuga quos quibusdam cumque architecto ipsum nihil consequuntur repellendus esse. Non dolorem ipsa ea voluptates porro saepe, velit, autem excepturi impedit accusantium ad aliquam voluptatibus neque maxime esse cum sint sit debitis quasi assumenda aut magni. Repellendus eligendi perferendis impedit porro, maxime doloremque quisquam eos. Est dolorem et eum. Error consequuntur suscipit ab alias iste quidem, neque earum porro voluptas labore tenetur, adipisci ipsum eveniet. Officiis fugiat optio, id perferendis possimus odit harum omnis temporibus a expedita corporis alias voluptatum neque ipsa nisi. Assumenda minima unde cumque! Distinctio tenetur consequatur consectetur accusamus neque sint tempore quod dolorem iste. Sapiente mollitia labore facere possimus reiciendis culpa atque, quod ratione. Neque quibusdam nulla cupiditate mollitia, ducimus, deleniti sapiente suscipit, aliquid corrupti distinctio a. Corrupti quis, repellat voluptate vero earum officia cupiditate facere quaerat vel incidunt veritatis in animi expedita perferendis quae magnam suscipit, eligendi dolorum doloremque non adipisci odio ex fuga. Odio libero porro laborum odit nisi aliquid tempora nemo. Necessitatibus, nostrum cum, quidem repellat libero ipsa aperiam eius aliquid in, cupiditate eligendi! Numquam velit ab eos corrupti sit enim modi quam blanditiis animi quibusdam delectus, aliquam necessitatibus minima? Sunt fuga nesciunt explicabo adipisci ad ipsa, quam ex ab, obcaecati excepturi neque minima. Dolore delectus saepe fugiat deserunt officiis perferendis esse nemo iusto necessitatibus voluptates in corrupti fugit temporibus dicta qui exercitationem quod accusamus, eligendi dolorem doloremque optio, impedit assumenda vel! Blanditiis eius distinctio ratione dolorem facere, maiores accusantium doloribus praesentium totam tenetur tempora mollitia quos. Eligendi quos fugiat, ratione architecto harum nam odio! Sed veniam dicta quos atque asperiores cum, deleniti voluptatum velit est adipisci enim totam vero porro possimus perspiciatis aut eum a? Deserunt inventore dolor similique quis laboriosam qui optio. Temporibus laboriosam molestias perferendis alias possimus beatae aut saepe reiciendis nam cum, culpa, ducimus itaque blanditiis at qui. Rem odit consectetur cupiditate, possimus eveniet natus accusamus, laboriosam ipsa quis eaque earum perspiciatis soluta molestias neque voluptates vitae illo expedita eum quisquam cumque magnam nam minus provident! Maiores voluptatem rerum eius quos ad velit a autem magni quaerat quo, esse corporis earum voluptas nesciunt tempora, aspernatur nisi rem facilis delectus maxime inventore consequuntur incidunt alias minima. Magnam, rem eius. Debitis molestiae cupiditate deleniti repellendus harum dicta consequuntur eum veritatis perspiciatis, quisquam, consectetur, atque illo laudantium ipsum explicabo vel officia nobis dolores architecto eius. Assumenda, maiores. Non aliquam, doloremque quas quod beatae quibusdam molestias odio illum quis? Aliquam id doloribus voluptate nobis. Ducimus quia recusandae dolorum voluptatem ex hic, quod reiciendis blanditiis alias! Quia, saepe tenetur! Eius consectetur, esse eaque dolorem quod, fugiat facilis qui repellendus dolores aliquam suscipit quo obcaecati quis nemo error iste, laboriosam labore possimus necessitatibus facere. Maiores, molestiae doloremque ipsa iste accusamus quaerat. Rerum, atque odio ex ab deserunt repellendus necessitatibus modi ea doloribus reprehenderit facilis ipsam aspernatur nobis eligendi harum sed nisi a assumenda? Ut eius laborum soluta neque ipsam maxime beatae blanditiis harum excepturi qui at nobis cumque dolorum saepe expedita perferendis unde officia, placeat nostrum debitis recusandae. Praesentium, enim! Sint vero aperiam totam corrupti rerum pariatur dignissimos. Unde mollitia delectus temporibus, exercitationem corrupti consectetur adipisci quidem dolores repellendus, dicta rerum similique tempore asperiores accusamus voluptatibus quod? Ipsa perspiciatis quia at recusandae, qui cumque facilis dolorum fuga rerum harum corrupti nulla, odio, eaque neque! Amet voluptatum sunt voluptatibus! Voluptas, nulla? Ipsum voluptas dignissimos minima harum voluptatibus eligendi expedita rem quasi placeat molestias quibusdam id delectus, officiis eum beatae eveniet tempora cum cupiditate. Sed, dolores tempore? Tempora corrupti cumque a amet sit nesciunt quae deleniti id, sequi labore in ex exercitationem eveniet debitis nemo numquam officiis, voluptates ipsum voluptatibus illum totam modi corporis. Eaque saepe eos quae porro perspiciatis. At id pariatur sequi atque laudantium mollitia voluptatibus vero inventore quod! Cumque omnis esse cum facilis odit magnam expedita, provident quaerat deleniti, ab culpa ut corrupti eius corporis veritatis reprehenderit necessitatibus quae obcaecati fuga fugiat nesciunt, iure error eos. Laborum autem dolore culpa nisi aliquam, possimus dolores qui, esse voluptates rerum, voluptate quod beatae ab voluptatum? Repellat quam nisi enim officia possimus necessitatibus eos voluptatibus neque vel ratione repellendus illo, explicabo ut consectetur eligendi aliquam dolores non aspernatur quia, ipsam, rem incidunt temporibus iste. Eius, blanditiis. Sunt consectetur fuga nisi soluta natus hic nam accusantium, nulla, unde commodi impedit quidem ratione totam dolor ab qui delectus dolorem, dicta possimus cumque praesentium! Placeat, numquam velit! Porro illo dignissimos iste veniam necessitatibus sed, tenetur quam ut? Qui nihil vitae repellendus nulla, dicta veritatis voluptas fuga maiores sit architecto, officiis adipisci sint quam delectus molestias culpa quibusdam accusamus numquam fugiat suscipit. Quis asperiores unde, ipsum harum nulla a! Magnam consequatur beatae ullam maiores reprehenderit nesciunt totam officia quis asperiores laudantium cupiditate quisquam veritatis, repellendus fugit autem iusto odit quaerat molestias quas deserunt sit provident itaque! Voluptates, possimus, similique soluta tenetur et illo accusamus quasi inventore earum veniam aliquid odit? Autem ducimus voluptate non sunt dolore dignissimos nemo, nobis quaerat unde temporibus vel minima, totam doloremque aut quod accusamus natus quibusdam commodi recusandae, alias ipsam error. Nisi cum expedita tempore ut vero, laboriosam adipisci sint et amet. Maiores harum est provident omnis dolorum facilis, ex quam reiciendis tempora, ipsam, mollitia possimus aperiam modi consequuntur similique rem? Accusamus soluta excepturi sit quos assumenda qui culpa quae, ipsa beatae consectetur neque eos sapiente tempora animi quasi necessitatibus, dolor ea ratione unde id consequuntur modi similique laboriosam iusto? Optio aspernatur odit natus a fugiat consequuntur quaerat reprehenderit iste iusto voluptate, soluta ullam. Tempora perspiciatis autem earum, quam quidem modi maxime. Id aperiam illo atque eaque nulla quidem numquam ex, asperiores hic totam quos quam dolores, dicta ipsam placeat modi fuga porro deleniti accusantium dolor accusamus! Non, laudantium? Architecto alias excepturi numquam?
             </div>
         </section>
     </div>
