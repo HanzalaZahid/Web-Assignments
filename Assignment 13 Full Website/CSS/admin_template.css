@@ -15,15 +15,37 @@
     background-color: rgb(196, 255, 199);
     width: 100%;
 }
+/* .section_case_nav_large
+{
+    padding-left: 240px;
+    margin-left: ;
+} */
 
+/* @media screen and (max-width: 1778px)
+{
+    .section_admin
+    {
+        width: 91.1%;
+    }
+} */
 @media screen and (max-width: 1654px)
 {
     .section_admin
     {
         /* margin-left: 27px!important; */
         /* margin-right: 27px!important; */
-        padding: 0 27px 0 88px;
-        max-width: 100%;
+        /* padding: 0 27px 0 88px; */
+        padding-left: 88px;
+        padding-right: 27px;
+        width: 100%;
+    }
+    .section_case_nav
+    {
+        padding-left: 309px;
+    }
+    .section_case_nav_large
+    {
+        margin-left: unset;
     }
 }
 @media screen and (max-width: 1778px)
