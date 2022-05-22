@@ -1,0 +1,40 @@
+.banner
+{
+    background-image: url(../../Images/banner_forum.jpg);
+}
+.name_link
+{
+    color: red;
+}
+.section_about_forum>.section_case
+{
+    font-size: 22px;
+    padding: 26px 22px;
+    background-color: #f8f8f8;
+    margin-top: 32px;
+}
+.section_about_forum>.section_case span
+{
+    color: red;
+    text-decoration: underline;
+}
+.card_header
+{
+    display: flex;
+    padding: 18px 22px;
+}
+.card_header>.label
+{
+    color: white;
+    font-size: 22px;
+    width: 200px;
+}
+
+.forum_post_header
+{
+    background-color: var(--dark_blue);
+}
+.replies_header
+{
+    background-color: var(--medium_blue);
+}

@@ -1,0 +1,36 @@
+.banner
+{
+    background-image: url(../../Images/banner_rebroadcast.jpg);
+}
+.section_rebroadcast
+{
+    padding-top: 48px;
+}
+.section_rebroadcast p
+{
+    padding-bottom: 18px;
+    font-size: 22px;
+}
+.section_rebroadcast a
+{
+    color: var(--light_blue);
+    
+}
+.section_rebroadcast a:hover
+{
+    color: var(--dark_blue);
+    font-size: 22px;
+}
+.section_rebroadcast img
+{
+    max-width: 100%;
+}
+/* 
+@media screen and (max-width: 1770px)
+{
+    img
+    {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+} */

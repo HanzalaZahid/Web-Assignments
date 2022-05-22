@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebroadcast</title>
+
+    <!-- CDN -->
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- STYLESHEETS -->
+    
+    <link rel="stylesheet" href="../Common/CSS/common.css">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <link rel="stylesheet" href="../Common/CSS/header_admin.css">
+    <link rel="stylesheet" href="../Common/CSS/nav_admin.css">
+    <link rel="stylesheet" href="../Common/CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/rebroadcast.css">
+
+    <!-- SCRIPTS -->
+
+    <script src="../Common/JS/header.js" defer></script>
+    <script src="../Common/JS/nav_admin.js" defer></script>
+
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="section_wrapper">
+                <a class="logo" href="">
+                    <img src="../Images/logo.png" alt="logo">
+                </a>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" placeholder="Please enter your search terms here.">
+                </div>
+                <div class="icons">
+                    <a href="" class="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-bell"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-user"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-caret-down"></i></a>
+                    <!-- <a href="" class="button search"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+                    <div class="button menu"><i class="fas fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <button class="menu_toggle menu_toggle_open ">Open Menu</button>
+                <button class="menu_toggle menu_toggle_close">Close Menu</button>
+                <ul class="header_nav">
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><button>SIGN OUT</button></li>
+                    <li><a href=""><div class="count">20</div><img src="../Images/logo_headertype.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup_nav">
+            <div class="popup_nav_container">
+                <div class="head">
+                    <a href="" class="logo">
+                        <img src="../Images/logo.png" alt="logo">
+                    </a>
+                    <div class="cross"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <ul class="nav">
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="..W/contact.html">CONTACT</a></li>
+                    <li><a class="button btn_signup btn_signout" href="">SIGNOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="admin_nav">
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <div class="text toggle_item">GCA Live</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="text toggle_item">Forum</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">Members Directory</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text toggle_item">Students</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+                    <div class="text toggle_item">Over The Gunsmith's Shoulder</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <div class="text toggle_item">In The Classroom</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="text toggle_item">Courses</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">GunTech Digital And Print Magazine</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <div class="text toggle_item">Guntech Reference Index</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <div class="text toggle_item">Our Partners</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text toggle_item">Members Store</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                    </div>
+                    <div class="text toggle_item">Resources</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="text toggle_item">Member Articles</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <div class="text toggle_item">Submit</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div class="text toggle_item">Hands On With Ken Brooks</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-brands fa-wikipedia-w"></i>
+                    </div>
+                    <div class="text toggle_item">Gunpedia</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+                    <div class="text toggle_item">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <div class="text toggle_item">Contact</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="text toggle_item">FFL Gold Members</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="page_content page_nav">
+        <section class="section_admin section_primary_banner">
+            <div class="section_case  section_case_nav_large">
+                <div class="banner">
+                    <div class="gradient"></div>
+                    <a href="" class="page_title">REBROADCAST</a>
+                </div>
+            </div>
+        </section>
+        <section class="section_rebroadcast section_admin">
+            <div class="section_case">
+                <p>Our November GCA Live included a great segment with Jamie Collins of <a href="">Fastbound</a>, our newest GCA  partner.</p>
+                <p>Since 2010, <a href="">FastBound’s</a> leading FFL software for A&D and 4473 has processed over a billion transactions for thousands of FFLs with guaranteed ATF compliance and an attorney-backed legal defense.</p>
+                <p>After watching, go to our Partner page to learn about the discount being offered to GCA members.                </p>
+                <p>The next GCA Live is scheduled for December 1st.</p>
+            </div>
+        </section>
+        <section class="section_admin section_broadcast">
+            <div class="section_case">
+                <img src="../Images/REBROADCAST.jpg" alt="video">
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="top">
+            <div class="section_wrapper">
+                <div class="left">
+                    <div class="title">WHO WE ARE</div>
+                    <div class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere nemo voluptates earum veniam tempore ea aut qui placeat ad unde ullam accusantium sint, rerum non? Reprehenderit dolor repellat ex!
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="title">USEFUL LINKS</div>
+                    <ul class="links">
+                        <li><a href="../about.html">ABOUT US</a></li>
+                        <li><a href="../contact.html">CONTACT US</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">TERMS & CONDITIONS</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="title">GET IN TOUCH</div>
+                    <div class="details">
+                        Speak to GCA's experienced team of specialists to understand what your options are.
+                    </div>
+                    <div class="icons">
+                        <a href="" class="button"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-bell"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-user"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-caret-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            Copyright Gunsmithing Clud Of America, All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

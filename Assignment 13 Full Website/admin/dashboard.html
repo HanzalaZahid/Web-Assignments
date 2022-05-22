@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- CDN -->
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- STYLESHEETS -->
+    
+    <link rel="stylesheet" href="../Common/CSS/common.css">
+    <link rel="stylesheet" href="../CSS/admin.css">
+    <link rel="stylesheet" href="../Common/CSS/header_admin.css">
+    <link rel="stylesheet" href="../Common/CSS/nav_admin.css">
+    <link rel="stylesheet" href="../Common/CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/dashboard.css">
+
+    <!-- SCRIPTS -->
+
+    <script src="../Common/JS/header.js" defer></script>
+    <script src="../Common/JS/nav_admin.js" defer></script>
+
+    <!-- FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- googleMAPS -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly" defer></script>
+    
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="section_wrapper">
+                <a class="logo" href="">
+                    <img src="../Images/logo.png" alt="logo">
+                </a>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" placeholder="Please enter your search terms here.">
+                </div>
+                <div class="icons">
+                    <a href="" class="button"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-bell"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-user"></i></a>
+                    <a href="" class="button"><i class="fa-solid fa-caret-down"></i></a>
+                    <!-- <a href="" class="button search"><i class="fa-solid fa-magnifying-glass"></i></a> -->
+                    <div class="button menu"><i class="fas fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <button class="menu_toggle menu_toggle_open ">Open Menu</button>
+                <button class="menu_toggle menu_toggle_close">Close Menu</button>
+                <ul class="header_nav">
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><button>SIGN OUT</button></li>
+                    <li><a href=""><div class="count">20</div><img src="../Images/logo_headertype.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="popup_nav">
+            <div class="popup_nav_container">
+                <div class="head">
+                    <a href="" class="logo">
+                        <img src="../Images/logo.png" alt="logo">
+                    </a>
+                    <div class="cross"><i class="fa-solid fa-circle-xmark"></i></div>
+                </div>
+                <ul class="nav">
+                    <li><a href="../home.html">HOME</a></li>
+                    <li><a href="../about.html">ABOUT</a></li>
+                    <li><a href="../gca_team.html">THE GCA TEAM</a></li>
+                    <li><a href="../blog.html">BLOG</a></li>
+                    <li><a href="../contact.html">CONTACT</a></li>
+                    <li><a class="button btn_signup btn_signout" href="">SIGNOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <nav class="admin_nav">
+        <ul class="nav_list">
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <div class="text toggle_item">GCA Live</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                    <div class="text toggle_item">Forum</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">Members Directory</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="text toggle_item">Students</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </div>
+                    <div class="text toggle_item">Over The Gunsmith's Shoulder</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <div class="text toggle_item">In The Classroom</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="text toggle_item">Courses</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <div class="text toggle_item">GunTech Digital And Print Magazine</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-circle-play"></i>
+                    </div>
+                    <div class="text toggle_item">Guntech Reference Index</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                    </div>
+                    <div class="text toggle_item">Our Partners</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="text toggle_item">Members Store</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-sheet-plastic"></i>
+                    </div>
+                    <div class="text toggle_item">Resources</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+                    <div class="text toggle_item">Member Articles</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <div class="text toggle_item">Submit</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-camera-retro"></i>
+                    </div>
+                    <div class="text toggle_item">Hands On With Ken Brooks</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-brands fa-wikipedia-w"></i>
+                    </div>
+                    <div class="text toggle_item">Gunpedia</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-images"></i>
+                    </div>
+                    <div class="text toggle_item">Gallery</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-address-book"></i>
+                    </div>
+                    <div class="text toggle_item">Contact</div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="icon">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <div class="text toggle_item">FFL Gold Members</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="page_content page_nav">
+        <section class="section_admin section_primary_banner">
+            <div class="section_case section_case_nav_large">
+                <div class="banner">
+                    <div class="gradient"></div>
+                    <a href="" class="page_title">DASHBOARD</a>
+                </div>
+            </div>
+        </section>
+        <section class="section_admin dashboard_cards">
+            <div class="section_case">
+                <div class="grid_layout_3">
+                    <div class="card_ live_date">
+                        <div class="title">NEXT GCA Live Date</div>
+                        <div class="card_body">
+                            <div class="label">
+                                DECEMBER
+                            </div>
+                            <div class="date">
+                                <div class="left">
+                                    <div class="date">01</div>
+                                    <div class="month">DEC</div>
+                                </div>
+                                <div class="right">GCA LIVE MEETING</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card_ gca_live">
+                        <div class="title">GCA LIVE</div>
+                        <div class="card_body">
+                            <p>October’s Meeting had Gene Kelly, GCA Founder along with Robert Dunn, GCA’s Community Manager and Jeff Quick, GCA’s Membership Relations Coordinator.  Meet the team in this rebroadcast!</p>
+                            <a href="">Watch The Rebroadcast Now.</a>
+                        </div>
+                    </div>
+                    <div class="card_ blog">
+                        <div class="title">Blog Of The Month</div>
+                        <div class="card_body">
+                            <p>
+                                This month’s blog, <a href=""><q>Spontaneous Combustion in your Gunsmithing Shop</q></a> Robert Dunn talks about safety and provides really great tips to keep things safe and prevent accidents.
+                            </p>
+                            <p>
+                                Our August Blog is a Vlog with member David Hill giving us a look at Lathes and Mills.  Great info for anyone putting together their dream Gunsmith workbench. <a href="">Go Here to watch</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_ sad_news">
+                        <div class="title">Sad News</div>
+                        <div class="card_body">
+                            <p>
+                                It is with heavy hearts that the Gunsmithing Club of America family announces the passing of Master Gunsmith, AGI Instructor, GunTech Editor and longtime friend, Jack Landis from an extended illness.
+                            </p>
+                            <p>
+                                Jack has been with AGI for over 16 years and helped found the Gunsmithing Club 15 years ago. Jack was instrumental in building our foundation, championing our evolution and guiding our sustainability over all these years. His humor, observational wit, and extensive knowledge, helped make GunTech what it is. He was also a patient, helpful mentor to many AGI students who benefited from his experience and flourished with his guidance.
+                            </p>
+                            <p>
+                                I personally spent countless hours with him; on the range testing firearms for GunTech, behind the scenes working & planning course development, over dinners strategizing how to build the organization that he loved, over drinks laughing after exhausting hours working various trade shows, and through hundreds of phone calls over the years organizing the work required to accomplish the missions of the American Gunsmithing Institute and the Gunsmithing Club of America. Jack worked tirelessly to execute on our vision, making huge contributions and now leaving big shoes to fill.
+                            </p>
+                            <p>
+                                Jack was also a friend who I admired for his broad knowledge of firearms and Gunsmithing, among many other subjects. (He also jokingly claimed to know the “Secrets of the Universe and How Women think”). He also corrected my grammar and punctuation to make me look good, which was almost a full time job in and of itself!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_ news">
+                        <div class="title">In Order News</div>
+                        <div class="card_body">
+                            <div class="label">New Forem Rules</div>
+                            <p>
+                                Thanks for participating in our community. To preserve a climate that encourages both civil and fruitful dialogue and ensures the best possible experience for all members, we have established some basic guidelines for participation.
+                            </p>
+                            <p>
+                                Please take a moment to acquaint yourself with these important guidelines.
+                            </p>
+                            <a href="">Forum Rules</a>
+                        </div>
+                    </div>
+                    <div class="card_ members">
+                        <div class="title">Members Directory</div>
+                        <div class="card_body">
+                            <div id="map">
+                                GOOGLE MAP HERE
+                                API IMPLEMENTED
+                                NO API KEY AVAILABLE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="top">
+            <div class="section_wrapper">
+                <div class="left">
+                    <div class="title">WHO WE ARE</div>
+                    <div class="details">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi facere nemo voluptates earum veniam tempore ea aut qui placeat ad unde ullam accusantium sint, rerum non? Reprehenderit dolor repellat ex!
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="title">USEFUL LINKS</div>
+                    <ul class="links">
+                        <li><a href="../about.html">ABOUT US</a></li>
+                        <li><a href="../contact.html">CONTACT US</a></li>
+                        <li><a href="../blog.html">BLOG</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">TERMS & CONDITIONS</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="title">GET IN TOUCH</div>
+                    <div class="details">
+                        Speak to GCA's experienced team of specialists to understand what your options are.
+                    </div>
+                    <div class="icons">
+                        <a href="" class="button"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-bell"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-user"></i></a>
+                        <a href="" class="button"><i class="fa-solid fa-caret-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            Copyright Gunsmithing Clud Of America, All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<!-- <script>
+    // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: -25.344, lng: 131.031 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+</script> -->

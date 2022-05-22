@@ -888,7 +888,7 @@ section
 {
     padding-top: 48px;
 }
-.section_primary_banner>.section_wrapper>.banner
+.section_primary_banner .banner
 {
 
     height: 285px;
@@ -898,7 +898,7 @@ section
     position: relative;
     overflow: hidden;
 }
-.section_primary_banner>.section_wrapper>.banner>.gradient
+.section_primary_banner .banner>.gradient
 {
     height: 60%;
     width: 100%;
@@ -907,7 +907,7 @@ section
     bottom: 0px;
     left: 0px;
 }
-.section_primary_banner>.section_wrapper>.banner>.page_title
+.section_primary_banner .banner>.page_title
 {
     color: white;
     font-size: 50px;
