@@ -1,0 +1,103 @@
+.banner
+{
+    background-image: url(../../Images/banner_gunsmith_shoulder.jpg);
+}
+.section_head
+{
+    margin-top: 48px;
+}
+
+.section_meta
+{
+    margin-top: 48px;
+}
+button
+{
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 20px;
+    /* margin-left: 27px; */
+    cursor: pointer;
+    font-size: 22px;
+    margin-top: 22px;
+}
+button:hover
+{
+    background-color: var(--red_hover);
+
+}
+.section_references
+{
+    margin-top: 48px;
+}
+.section_references .title
+{
+    padding-bottom: 12px;
+}
+.section_references .references
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 22px;
+    row-gap: 22px;
+    align-items: flex-start;
+}
+.section_references .references .reference
+{
+    padding: 22px;
+}
+.section_references .references .reference>.title
+{
+    font-size: 30px;
+    color: var(--dark_blue);
+}
+.section_references .references .reference>.list
+{
+    font-size: 20px;
+    list-style-position: inside;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 1190px)
+{
+    .title
+    {
+        font-size: 24px!important;
+    }
+    .section_references .references .reference>.list
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1080px)
+{
+    .section_references .references
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+    .title
+    {
+        font-size: 30px!important;
+    }
+    .section_references .references .reference>.list
+    {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 860px)
+{
+    .section_references .references
+    {
+        grid-template-columns: 1fr;
+    }
+    .title
+    {
+        font-size: 30px;
+    }
+    .section_references .references .reference>.list
+    {
+        font-size: 22px;
+    }
+}
